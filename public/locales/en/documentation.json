@@ -1,0 +1,23 @@
+
+{
+    "title": "Development Documentation",
+    "description": "Documentation of the WPL Portfolio development process",
+    "readMore": "Read More",
+    "backToOverview": "Back to Overview",
+    "cards": {
+      "initiation": {
+        "title": "Project Initiation",
+        "description": "Explore the initial setup and configuration of the WPL Portfolio project, including technology choices and project structure implementation."
+      }
+    },
+    "initiation": {
+      "title": "Project Initiation Documentation",
+      "description": "Detailed documentation of the initial project setup and configuration",
+      "sections": {
+        "setup": {
+          "title": "Initial Setup",
+          "description": "The project was initialized using create-next-app with TypeScript, Tailwind CSS, and the Pages Router configuration. This foundation provides a robust starting point for our portfolio website."
+        }
+      }
+    }
+  }

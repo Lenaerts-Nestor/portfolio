@@ -1,0 +1,22 @@
+
+{
+    "navigation": {
+      "home": "Home",
+      "about": "About",
+      "blog": "Blog",
+      "documentation": "Documentation"
+
+    },
+    "home": {
+      "welcome": "Welcome to My WPL Portfolio",
+      "description": "This portfolio documents my internship journey as part of the Programming Graduate program at AP Hogeschool. Here, I share my experiences, learnings, and growth throughout my workplace learning period.",
+      "readBlog": "Read Blog Posts",
+      "aboutMe": "About Me",
+      "latestPosts": "Latest Blog Posts",
+      "comingSoon": "Coming soon...",
+      "quickOverview": "Quick Overview",
+      "internshipDetails": "Internship Details",
+      "technologies": "Technologies"
+    }
+  }
+  

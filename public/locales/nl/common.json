@@ -1,0 +1,20 @@
+
+{
+    "navigation": {
+      "home": "Home",
+      "about": "Over mij",
+      "blog": "Blog",
+      "documentation": "Documentation"
+    },
+    "home": {
+      "welcome": "Welkom bij Mijn WPL Portfolio",
+      "description": "Dit portfolio documenteert mijn stageverloop als onderdeel van het Graduaat Programmeren aan AP Hogeschool. Hier deel ik mijn ervaringen, leermomenten en groei tijdens mijn werkplekleren.",
+      "readBlog": "Lees Blogberichten",
+      "aboutMe": "Over Mij",
+      "latestPosts": "Laatste Blogberichten",
+      "comingSoon": "Binnenkort beschikbaar...",
+      "quickOverview": "Snel Overzicht",
+      "internshipDetails": "Stage Details",
+      "technologies": "Technologieën"
+    }
+  }

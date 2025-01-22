@@ -1,0 +1,23 @@
+
+{
+    "title": "Ontwikkelingsdocumentatie",
+    "description": "Documentatie van het WPL Portfolio ontwikkelingsproces",
+    "readMore": "Lees Meer",
+    "backToOverview": "Terug naar Overzicht",
+    "cards": {
+      "initiation": {
+        "title": "Project Initiatie",
+        "description": "Ontdek de initiële setup en configuratie van het WPL Portfolio project, inclusief technologiekeuzes en project structuur implementatie."
+      }
+    },
+    "initiation": {
+      "title": "Project Initiatie Documentatie",
+      "description": "Gedetailleerde documentatie van de initiële project setup en configuratie",
+      "sections": {
+        "setup": {
+          "title": "Initiële Setup",
+          "description": "Het project werd geïnitialiseerd met create-next-app met TypeScript, Tailwind CSS en de Pages Router configuratie. Deze basis biedt een robuust startpunt voor onze portfolio website."
+        }
+      }
+    }
+  }
