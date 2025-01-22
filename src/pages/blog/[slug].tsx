@@ -44,16 +44,14 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: 'blocking'
   };
 };
-
-export const getStaticProps: GetStaticProps<BlogPostProps, Params> = async ({ params }) => {
-  // Here you would fetch the blog post data based on the slug
-  // For now, returning dummy data
-  return {
-    props: {
-      title: 'Sample Blog Post',
-      content: 'This is a sample blog post content.',
-      date: new Date().toISOString(),
-      tags: ['code', 'internship']
-    }
+export const getStaticProps: GetStaticProps<BlogPostProps, Params> = async () => {
+    // Remove params from parameters if not being used
+    return {
+      props: {
+        title: 'Sample Blog Post',
+        content: 'This is a sample blog post content.',
+        date: new Date().toISOString(),
+        tags: ['code', 'internship']
+      }
+    };
   };
-};

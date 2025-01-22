@@ -4,7 +4,6 @@ import { useTranslation } from 'next-i18next';
 
 export default function LanguageSwitcher() {
   const router = useRouter();
-  const { i18n } = useTranslation();
 
   const toggleLanguage = () => {
     const newLocale = router.locale === 'en' ? 'nl' : 'en';

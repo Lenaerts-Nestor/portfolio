@@ -19,7 +19,7 @@ export default function Home() {
         <section className="text-center py-12">
           <h1 className="text-4xl font-bold mb-6">{t('home.welcome')}</h1>
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            {t('home.description')}
+            {t('home.description').replace("'", "&apos;")}
           </p>
           <div className="flex justify-center gap-4">
             <Link 

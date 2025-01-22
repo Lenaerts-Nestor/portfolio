@@ -43,7 +43,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-700 mb-2">Connect</h3>
             <div className="flex space-x-3">
               <a 
-                href="https://linkedin.com/in/your-profile" 
+                href="https://www.linkedin.com/in/nestor-lenaerts-4652381b9/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -54,7 +54,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a 
-                href="https://github.com/your-username" 
+                href="https://github.com/Lenaerts-Nestor" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
