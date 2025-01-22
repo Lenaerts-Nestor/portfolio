@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,7 +15,7 @@
     "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
     "i18next": "^24.2.1",
-    "next": "15.1.6",
+    "next": "^14.1.0",
     "next-i18next": "^15.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
