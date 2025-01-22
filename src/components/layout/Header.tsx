@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
+import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from '../LanguageSwitcher';
 
 export default function Header() {
@@ -9,61 +10,70 @@ export default function Header() {
   const { t } = useTranslation('common');
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg">
       <nav className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="font-bold text-xl">
+          <Link href="/" className="font-bold text-2xl tracking-tight hover:text-blue-100 transition-colors">
             Portfolio WPL
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-gray-900">
+            <Link href="/" className="text-blue-100 hover:text-white transition-colors">
               {t('navigation.home', 'Home')}
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-gray-900">
+            <Link href="/about" className="text-blue-100 hover:text-white transition-colors">
               {t('navigation.about', 'About')}
             </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-gray-900">
+            <Link href="/blog" className="text-blue-100 hover:text-white transition-colors">
               {t('navigation.blog', 'Blog')}
             </Link>
-            <Link href="/documentation" className="text-gray-700 hover:text-gray-900">
+            <Link href="/documentation" className="text-blue-100 hover:text-white transition-colors">
               {t('navigation.documentation', 'Documentation')}
             </Link>
             <LanguageSwitcher />
           </div>
 
           <button 
-            className="md:hidden"
+            className="md:hidden p-2 rounded-lg hover:bg-blue-700 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
-            {/* Mobile menu button content */}
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden py-4">
-            <div className="flex flex-col space-y-4">
-              <Link 
-                href="/" 
-                className="text-gray-700 hover:text-gray-900"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('navigation.home', 'Home')}
-              </Link>
-              <Link 
-                href="/about" 
-                className="text-gray-700 hover:text-gray-900"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('navigation.about', 'About')}
-              </Link>
-              <Link 
-                href="/blog" 
-                className="text-gray-700 hover:text-gray-900"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t('navigation.blog', 'Blog')}
-              </Link>
+          <div className="md:hidden py-4 space-y-4 border-t border-blue-500">
+            <Link 
+              href="/" 
+              className="block text-blue-100 hover:text-white transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('navigation.home', 'Home')}
+            </Link>
+            <Link 
+              href="/about" 
+              className="block text-blue-100 hover:text-white transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('navigation.about', 'About')}
+            </Link>
+            <Link 
+              href="/blog" 
+              className="block text-blue-100 hover:text-white transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('navigation.blog', 'Blog')}
+            </Link>
+            <Link 
+              href="/documentation" 
+              className="block text-blue-100 hover:text-white transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('navigation.documentation', 'Documentation')}
+            </Link>
+            <div className="pt-2">
+              <LanguageSwitcher />
             </div>
           </div>
         )}
