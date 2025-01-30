@@ -1,40 +1,84 @@
 // src/components/layout/Header.tsx
-import Link from 'next/link';
-import { useState } from 'react';
-import { useTranslation } from 'next-i18next';
-import { Menu, X } from 'lucide-react';
-import LanguageSwitcher from '../LanguageSwitcher';
+import Link from "next/link";
+import { useState } from "react";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import { Menu, X } from "lucide-react";
+import LanguageSwitcher from "@/components/LanguageSwitcher"; // Correct path
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
+  const router = useRouter();
+
+  // Helper function to check active path
+  const isActive = (pathname: string) => router.pathname === pathname;
 
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg">
+    <header className="bg-white border-b border-slate-200 shadow-sm">
       <nav className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="font-bold text-2xl tracking-tight hover:text-blue-100 transition-colors">
+          <Link
+            href="/"
+            className="font-bold text-2xl text-slate-800 hover:text-indigo-600 transition-colors"
+          >
             Portfolio WPL
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-blue-100 hover:text-white transition-colors">
-              {t('navigation.home', 'Home')}
+            <Link
+              href="/"
+              className={`px-3 py-2 text-sm font-medium ${
+                isActive("/")
+                  ? "text-indigo-600 border-b-2 border-indigo-600"
+                  : "text-slate-600 hover:text-indigo-600"
+              } transition-colors`}
+            >
+              {t("navigation.home")}
             </Link>
-            <Link href="/about" className="text-blue-100 hover:text-white transition-colors">
-              {t('navigation.about', 'About')}
+
+            <Link
+              href="/about"
+              className={`px-3 py-2 text-sm font-medium ${
+                isActive("/about")
+                  ? "text-indigo-600 border-b-2 border-indigo-600"
+                  : "text-slate-600 hover:text-indigo-600"
+              } transition-colors`}
+            >
+              {t("navigation.about")}
             </Link>
-            <Link href="/blog" className="text-blue-100 hover:text-white transition-colors">
-              {t('navigation.blog', 'Blog')}
+
+            <Link
+              href="/blog"
+              className={`px-3 py-2 text-sm font-medium ${
+                isActive("/blog")
+                  ? "text-indigo-600 border-b-2 border-indigo-600"
+                  : "text-slate-600 hover:text-indigo-600"
+              } transition-colors`}
+            >
+              {t("navigation.blog")}
             </Link>
-            <Link href="/documentation" className="text-blue-100 hover:text-white transition-colors">
-              {t('navigation.documentation', 'Documentation')}
+
+            <Link
+              href="/documentation"
+              className={`px-3 py-2 text-sm font-medium ${
+                isActive("/documentation")
+                  ? "text-indigo-600 border-b-2 border-indigo-600"
+                  : "text-slate-600 hover:text-indigo-600"
+              } transition-colors`}
+            >
+              {t("navigation.documentation")}
             </Link>
-            <LanguageSwitcher />
+
+            <div className="pl-4 border-l border-slate-200">
+              <LanguageSwitcher />
+            </div>
           </div>
 
-          <button 
-            className="md:hidden p-2 rounded-lg hover:bg-blue-700 transition-colors"
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors text-slate-600"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -42,37 +86,58 @@ export default function Header() {
           </button>
         </div>
 
+        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 space-y-4 border-t border-blue-500">
-            <Link 
-              href="/" 
-              className="block text-blue-100 hover:text-white transition-colors"
+          <div className="md:hidden py-4 space-y-4 border-t border-slate-200">
+            <Link
+              href="/"
+              className={`block px-4 py-2 text-sm ${
+                isActive("/")
+                  ? "text-indigo-600 bg-indigo-50 rounded-lg"
+                  : "text-slate-600 hover:bg-slate-50"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navigation.home', 'Home')}
+              {t("navigation.home")}
             </Link>
-            <Link 
-              href="/about" 
-              className="block text-blue-100 hover:text-white transition-colors"
+
+            <Link
+              href="/about"
+              className={`block px-4 py-2 text-sm ${
+                isActive("/about")
+                  ? "text-indigo-600 bg-indigo-50 rounded-lg"
+                  : "text-slate-600 hover:bg-slate-50"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navigation.about', 'About')}
+              {t("navigation.about")}
             </Link>
-            <Link 
-              href="/blog" 
-              className="block text-blue-100 hover:text-white transition-colors"
+
+            <Link
+              href="/blog"
+              className={`block px-4 py-2 text-sm ${
+                isActive("/blog")
+                  ? "text-indigo-600 bg-indigo-50 rounded-lg"
+                  : "text-slate-600 hover:bg-slate-50"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navigation.blog', 'Blog')}
+              {t("navigation.blog")}
             </Link>
-            <Link 
-              href="/documentation" 
-              className="block text-blue-100 hover:text-white transition-colors"
+
+            <Link
+              href="/documentation"
+              className={`block px-4 py-2 text-sm ${
+                isActive("/documentation")
+                  ? "text-indigo-600 bg-indigo-50 rounded-lg"
+                  : "text-slate-600 hover:bg-slate-50"
+              }`}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t('navigation.documentation', 'Documentation')}
+              {t("navigation.documentation")}
             </Link>
-            <div className="pt-2">
+
+            <div className="pt-4 border-t border-slate-200">
               <LanguageSwitcher />
             </div>
           </div>

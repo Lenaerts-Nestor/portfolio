@@ -44,6 +44,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
     fallback: 'blocking'
   };
 };
+
+
 export const getStaticProps: GetStaticProps<BlogPostProps, Params> = async () => {
     // Remove params from parameters if not being used
     return {

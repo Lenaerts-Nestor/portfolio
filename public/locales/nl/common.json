@@ -1,20 +1,36 @@
-
 {
-    "navigation": {
-      "home": "Home",
-      "about": "Over mij",
-      "blog": "Blog",
-      "documentation": "Documentation"
-    },
-    "home": {
-      "welcome": "Welkom bij Mijn WPL Portfolio",
-      "description": "Dit portfolio documenteert mijn stageverloop als onderdeel van het Graduaat Programmeren aan AP Hogeschool. Hier deel ik mijn ervaringen, leermomenten en groei tijdens mijn werkplekleren.",
-      "readBlog": "Lees Blogberichten",
-      "aboutMe": "Over Mij",
-      "latestPosts": "Laatste Blogberichten",
-      "comingSoon": "Binnenkort beschikbaar...",
-      "quickOverview": "Snel Overzicht",
-      "internshipDetails": "Stage Details",
-      "technologies": "Technologieën"
-    }
-  }
+  "navigation": {
+    "home": "Home",
+    "about": "Over mij",
+    "blog": "Blog",
+    "documentation": "Documentatie"
+  },
+  "home": {
+    "welcome": "Welkom bij Mijn WPL Portfolio",
+    "description": "Dit portfolio documenteert mijn stageverloop als onderdeel van het Graduaat Programmeren aan AP Hogeschool. Hier deel ik mijn ervaringen, leermomenten en groei tijdens mijn werkplekleren.",
+    "readBlog": "Lees Blogberichten",
+    "aboutMe": "Over Mij",
+    "latestPosts": "Laatste Blogberichten",
+    "comingSoon": "Binnenkort beschikbaar...",
+    "quickOverview": "Snel Overzicht",
+    "internshipDetails": "Stagedetails",
+    "technologies": "Technologieën",
+    "position": "Positie",
+    "duration": "Looptijd",
+    "techUsed": "Gebruikte Technologieën"
+  },
+  "about": {
+    "title": "Aspirerend Full Stack Developer",
+    "educationTitle": "Opleiding & Focus",
+    "educationText": "Ik studeer momenteel programmeren aan AP Hogeschool, met specialisatie in full-stack ontwikkeling. Hoewel ik een natuurlijke aanleg heb voor backend-systemen, breid ik actief mijn frontend-expertise uit om een veelzijdige ontwikkelaar te worden die alle aspecten van moderne webontwikkeling aankan.",
+    "languagesTitle": "Taalvaardigheid",
+    "languagesText": "Vloeiend in drie talen: Spaans (moedertaal), Nederlands (professionele vaardigheid) en Engels (professionele vaardigheid). Deze meertaligheid maakt effectieve samenwerking in internationale teams mogelijk en het begrijpen van technische documentatie in verschillende talen.",
+    "aiTitle": "AI in Ontwikkeling",
+    "aiPhilosophy": "Strategische AI-integratie",
+    "aiPhilosophyText": "Ik benader AI als een krachtig collaboratief hulpmiddel dat ontwikkelaarsexpertise versterkt in plaats van vervangt. Mijn focus ligt op het gebruik van AI voor codekwaliteitsverbeteringen, architecturale begeleiding en efficiënt probleemoplossend vermogen, terwijl ik volledig begrip en eigendom van de codebase behoud.",
+    "aiApproach": "Praktische Implementatie",
+    "aiApproachText": "In mijn workflow gebruik ik AI voor specifieke taken: het analyseren van codepatronen, het genereren van documentatiedrafts en het verkennen van alternatieve implementatiestrategieën. Ik handhaaf strikte ethische normen door nooit gevoelige code of eigendomsinformatie te delen met AI-systemen.",
+    "aiExample": "De ontwikkeling van dit portfolio omvatte AI voor structurele aanbevelingen en efficiëntie-optimalisaties, terwijl ik volledige controle en begrip van alle implementatiedetails behield."
+  },
+  "toggleLanguage": "Taal wisselen"
+}

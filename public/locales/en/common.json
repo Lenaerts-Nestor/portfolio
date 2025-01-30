@@ -1,22 +1,36 @@
-
 {
-    "navigation": {
-      "home": "Home",
-      "about": "About",
-      "blog": "Blog",
-      "documentation": "Documentation"
-
-    },
-    "home": {
-      "welcome": "Welcome to My WPL Portfolio",
-      "description": "This portfolio documents my internship journey as part of the Programming Graduate program at AP Hogeschool. Here, I share my experiences, learnings, and growth throughout my workplace learning period.",
-      "readBlog": "Read Blog Posts",
-      "aboutMe": "About Me",
-      "latestPosts": "Latest Blog Posts",
-      "comingSoon": "Coming soon...",
-      "quickOverview": "Quick Overview",
-      "internshipDetails": "Internship Details",
-      "technologies": "Technologies"
-    }
-  }
-  
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "blog": "Blog",
+    "documentation": "Documentation"
+  },
+  "home": {
+    "welcome": "Welcome to My WPL Portfolio",
+    "description": "This portfolio documents my internship journey as part of the Programming Graduate program at AP Hogeschool. Here, I share my experiences, learnings, and growth throughout my workplace learning period.",
+    "readBlog": "Read Blog Posts",
+    "aboutMe": "About Me",
+    "latestPosts": "Latest Blog Posts",
+    "comingSoon": "Coming soon...",
+    "quickOverview": "Quick Overview",
+    "internshipDetails": "Internship Details",
+    "technologies": "Technologies",
+    "position": "Position",
+    "duration": "Duration",
+    "techUsed": "Techs Used"
+  },
+  "about": {
+    "title": "Aspiring Full Stack Developer",
+    "educationTitle": "Education & Focus",
+    "educationText": "I'm currently pursuing my Programming degree at AP Hogeschool, specializing in full-stack development. While I have a natural aptitude for backend systems, I'm actively expanding my frontend expertise to become a versatile developer capable of handling all aspects of modern web development.",
+    "languagesTitle": "Language Proficiency",
+    "languagesText": "Fluent in three languages: Spanish (native), Dutch (professional proficiency), and English (professional proficiency). This multilingual capability enables effective collaboration in international teams and understanding of technical documentation across languages.",
+    "aiTitle": "AI in Development",
+    "aiPhilosophy": "Strategic AI Integration",
+    "aiPhilosophyText": "I approach AI as a powerful collaborative tool that enhances rather than replaces developer expertise. My focus is on using AI for code quality improvements, architectural guidance, and efficient problem-solving while maintaining complete understanding and ownership of the codebase.",
+    "aiApproach": "Practical Implementation",
+    "aiApproachText": "In my workflow, I employ AI for specific tasks: analyzing code patterns, generating documentation drafts, and exploring alternative implementation strategies. I maintain strict ethical standards by never sharing sensitive code or proprietary information with AI systems.",
+    "aiExample": "This portfolio's development incorporated AI for structural recommendations and efficiency optimizations, while maintaining full control and understanding of all implementation details."
+  },
+  "toggleLanguage": "Toggle language"
+}
