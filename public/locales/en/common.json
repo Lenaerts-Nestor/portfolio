@@ -6,8 +6,8 @@
     "documentation": "Documentation"
   },
   "home": {
-    "welcome": "Welcome to My WPL Portfolio",
-    "description": "This portfolio documents my internship journey as part of the Programming Graduate program at AP Hogeschool. Here, I share my experiences, learnings, and growth throughout my workplace learning period.",
+    "welcome": "Welcome to my WPL Portfolio",
+    "description": "This portfolio documents my internship journey as part of the Graduate Programming program at AP Hogeschool. Here, I share my experiences, lessons, and growth during my workplace learning period.",
     "readBlog": "Read Blog Posts",
     "aboutMe": "About Me",
     "latestPosts": "Latest Blog Posts",
@@ -18,11 +18,11 @@
     "projects": "Projects",
     "position": "Position",
     "duration": "Duration",
-    "techUsed": "Techs Used",
+    "techUsed": "Technologies Used",
     "experienceTitle": "Experience",
     "coreSkillsTitle": "Core Skills",
     "educationTitle": "Education",
-    "techDescription": "This is the stack of tech I'm able to work with. More will be added soon!",
+    "techDescription": "This is the tech stack I’m able to work with. More will be added soon!",
     "projectsDescription": "Here are my key projects demonstrating my technical capabilities.",
     "experienceDescription": "My professional journey in the tech industry so far.",
     "skillsDescription": "Core competencies I bring to development teams.",
@@ -44,14 +44,14 @@
       "antwerp": "Antwerpen, Belgium · Temporary Contract"
     },
     "experienceDescriptions": {
-      "beego": "Helped clients with basic tech issues at their homes or businesses, like fixing computers and explaining how to stay safe online.",
-      "digipolis": "Learned the basics of ICT support by setting up computers and helping with network setups. It was a good way to see how things work outside of programming."
+      "beego": "I helped clients with basic tech issues at their homes or businesses, such as fixing computers and explaining how to stay safe online.",
+      "digipolis": "I learned the basics of ICT support by setting up computers and assisting with network setups. It was a great way to see how things work outside of programming."
     },
     "education": {
       "degree": "Graduaat, Information Technology",
       "school": "AP Hogeschool Antwerpen",
       "duration": "Sep 2023 - Jun 2025",
-      "courses": "Relevant courses:",
+      "courses": "Relevant Courses:",
       "courseList": {
         "web": "Web Development",
         "systems": "System Administration"
@@ -69,27 +69,27 @@
   "about": {
     "title": "Full-Stack Developer in Training",
     "educationTitle": "My Learning Journey",
-    "educationText": "I'm currently studying Programming at AP Hogeschool, learning both frontend and backend development. While I enjoy the logic of backend work, I'm also working on improving my frontend skills to build complete applications from start to finish.",
+    "educationText": "I’m currently studying Programming at AP Hogeschool, learning both frontend and backend development. While I enjoy the logic of backend work, I’m also improving my frontend skills to build complete applications from start to finish.",
     "languagesTitle": "Languages I Speak",
-    "languagesText": "Native Spanish speaker, fluent in Dutch, and comfortable working in English. This helps me work well in diverse teams and understand technical resources in multiple languages.",
+    "languagesText": "I’m a native Spanish speaker, fluent in Dutch, and comfortable working in English. This helps me collaborate in diverse teams and understand technical resources in multiple languages.",
     "aiTitle": "My Approach to AI",
     "aiPhilosophy": "Using AI Smartly",
-    "aiPhilosophyText": "I see AI as a helpful partner in coding - great for suggesting improvements and catching mistakes, while I keep full control and understanding of my projects.",
+    "aiPhilosophyText": "I see AI as a helpful partner in coding—great for suggesting improvements and catching mistakes, while I maintain full control and understanding of my projects.",
     "aiApproach": "How I Use It",
-    "aiApproachText": "I mainly use AI for: Getting code suggestions, improving existing solutions, and writing documentation. I'm careful never to share private code or data with AI tools.",
+    "aiApproachText": "I mainly use AI for code suggestions, improving existing solutions, and writing documentation. I’m always careful not to share private code or data with AI tools.",
     "aiExample": "While building this portfolio, I used AI for layout ideas and troubleshooting, but every decision and line of code is my own.",
     "goalsTitle": "My Goals",
     "goalsText": "I aim to become a fullstack developer focused on maintaining and optimizing existing systems. My priority is improving efficiency and functionality rather than always building new technologies.",
-    "goalsPhilosophy": "It's not just about creating new features, but about keeping existing systems future-proof and maintainable.",
+    "goalsPhilosophy": "It’s not just about creating new features, but about keeping existing systems future-proof and maintainable.",
     "methodsTitle": "My Methods",
     "methodsApproach": "Building Knowledge",
-    "methodsText1": "By learning new technologies while deepening existing knowledge. Finding balance between innovation and practical application of proven solutions.",
+    "methodsText1": "I do this by learning new technologies while deepening my existing knowledge—finding a balance between innovation and the practical application of proven solutions.",
     "methodsLearning": "Learning Approach",
-    "methodsText2": "Through books like 'Clean Code' and 'Don't Make Me Think', combined with AI-driven learning methods. Always seeking ways to improve code quality and maintainability."
+    "methodsText2": "I learn through books like ‘Clean Code’ and ‘Don’t Make Me Think,’ combined with AI-driven learning methods. I’m always looking for ways to improve code quality and maintainability."
   },
   "footer": {
     "about": "About",
-    "description": "Documenting my internship journey at [Company Name] as part of the AP Hogeschool Programming program.",
+    "description": "Documenting my internship journey at [Company Name] as part of the Programming program at AP Hogeschool.",
     "quickLinks": "Quick Links",
     "connect": "Connect",
     "copyright": "© {year} Portfolio WPL. All rights reserved."

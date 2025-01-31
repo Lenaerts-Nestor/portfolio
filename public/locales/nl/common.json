@@ -6,13 +6,13 @@
     "documentation": "Documentatie"
   },
   "home": {
-    "welcome": "Welkom bij Mijn WPL Portfolio",
-    "description": "Dit portfolio documenteert mijn stageverloop als onderdeel van het Graduaat Programmeren aan AP Hogeschool. Hier deel ik mijn ervaringen, leermomenten en groei tijdens mijn werkplekleren.",
-    "readBlog": "Lees Blogberichten",
-    "aboutMe": "Over Mij",
-    "latestPosts": "Laatste Blogberichten",
+    "welcome": "Welkom bij mijn WPL-portfolio",
+    "description": "Dit portfolio documenteert mijn stageverloop als onderdeel van het graduaat Programmeren aan de AP Hogeschool. Hier deel ik mijn ervaringen, leermomenten en groei tijdens het werkplekleren.",
+    "readBlog": "Lees blogberichten",
+    "aboutMe": "Over mij",
+    "latestPosts": "Laatste blogberichten",
     "comingSoon": "Binnenkort beschikbaar...",
-    "quickOverview": "Snel Overzicht",
+    "quickOverview": "Snel overzicht",
     "internshipDetails": "Stagedetails",
     "technologies": "Technologieën",
     "projects": "Projecten",
@@ -22,9 +22,9 @@
     "experienceTitle": "Ervaring",
     "coreSkillsTitle": "Kernvaardigheden",
     "educationTitle": "Opleiding",
-    "techDescription": "Dit is de technologie waar ik momenteel mee kan werken. Er volgt binnenkort meer!",
+    "techDescription": "Dit zijn de technologieën waarmee ik momenteel kan werken. Binnenkort volgt er meer!",
     "projectsDescription": "Hier zijn mijn belangrijkste projecten die mijn technische vaardigheden demonstreren.",
-    "experienceDescription": "Mijn professionele reis in de tech industrie tot nu toe.",
+    "experienceDescription": "Mijn professionele reis in de techindustrie tot nu toe.",
     "skillsDescription": "Kerncompetenties die ik meebreng naar development teams.",
     "educationDescription": "Mijn formele opleiding in informatica.",
     "positions": {
@@ -44,8 +44,8 @@
       "antwerp": "Antwerpen, België · Tijdelijk contract"
     },
     "experienceDescriptions": {
-      "beego": "Hielp klanten met basis technische problemen thuis of op het werk, zoals computers repareren en uitleggen hoe ze veilig online kunnen blijven.",
-      "digipolis": "Leerde de basis van ICT-ondersteuning door computers in te stellen en te helpen met netwerkinstallaties. Een goede manier om te zien hoe dingen werken buiten programmeren."
+      "beego": "Ik hielp klanten met basistechnische problemen thuis of op het werk, zoals het repareren van computers en uitleggen hoe ze veilig online kunnen blijven.",
+      "digipolis": "Ik leerde de basis van ICT-ondersteuning door computers in te stellen en te helpen met netwerkinstallaties. Zo kreeg ik een goed beeld van hoe alles werkt buiten het programmeren."
     },
     "education": {
       "degree": "Graduaat, Informatica",
@@ -69,28 +69,28 @@
   "about": {
     "title": "Aankomend Full-Stack Developer",
     "educationTitle": "Mijn Leertraject",
-    "educationText": "Ik studeer momenteel Programmeren aan AP Hogeschool, waar ik zowel frontend als backend ontwikkeling leer. Hoewel ik backend werk het leukst vind, werk ik ook hard aan mijn frontend vaardigheden om complete applicaties te kunnen bouwen.",
+    "educationText": "Ik studeer momenteel Programmeren aan AP Hogeschool, waar ik zowel frontend als backend ontwikkeling leer. Hoewel ik backend-werk het leukst vind, werk ik ook hard aan mijn frontend-vaardigheden om complete applicaties te kunnen bouwen.",
     "languagesTitle": "Talen die ik spreek",
-    "languagesText": "Moedertaal Spaans, vloeiend in Nederlands en comfortabel met Engels. Dit helpt me goed samen te werken in diverse teams en technische bronnen in meerdere talen te begrijpen.",
+    "languagesText": "Mijn moedertaal is Spaans; ik spreek vloeiend Nederlands en ben comfortabel met Engels. Zo kan ik goed samenwerken in diverse teams en technische bronnen in meerdere talen begrijpen.",
     "aiTitle": "Mijn Kijk op AI",
     "aiPhilosophy": "AI Slim Inzetten",
-    "aiPhilosophyText": "Ik zie AI als een handige hulp bij het programmeren - ideaal voor suggesties en het vinden van fouten, terwijl ik zelf de controle en begrip over mijn projecten houd.",
+    "aiPhilosophyText": "Ik zie AI als een handige hulp bij het programmeren: ideaal voor suggesties en het opsporen van fouten, terwijl ik zelf de controle en het begrip over mijn projecten behoud.",
     "aiApproach": "Hoe Ik Het Gebruik",
-    "aiApproachText": "Ik gebruik AI vooral voor: Code suggesties, bestaande oplossingen verbeteren, en documentatie schrijven. Ik ben altijd zorgvuldig met privacy en deel nooit gevoelige code of data.",
-    "aiExample": "Bij het bouwen van dit portfolio kreeg ik AI-suggesties voor layout en problemen oplossen, maar alle keuzes en code zijn door mij gemaakt.",
+    "aiApproachText": "Ik gebruik AI vooral voor code-suggesties, het verbeteren van bestaande oplossingen en het schrijven van documentatie. Ik ben altijd voorzichtig met privacy en deel nooit gevoelige code of data.",
+    "aiExample": "Bij het bouwen van dit portfolio kreeg ik AI-suggesties voor de lay-out en bij het oplossen van problemen, maar alle keuzes en de code zijn door mij gemaakt.",
     "goalsTitle": "Mijn Doelen",
     "goalsText": "Ik wil een fullstack developer worden die bestaande systemen onderhoudt en optimaliseert. Mijn focus ligt op het verbeteren van efficiëntie en functionaliteit, in plaats van altijd nieuwe technologieën te bouwen.",
     "goalsPhilosophy": "Het draait niet alleen om nieuwe features maken, maar om bestaande systemen toekomstbestendig en onderhoudsvriendelijk te houden.",
     "methodsTitle": "Mijn Werkwijze",
     "methodsApproach": "Kennis Opbouwen",
-    "methodsText1": "Door zowel nieuwe technologieën te leren als bestaande kennis te verdiepen. Een balans vinden tussen innovatie en praktische toepassing van bewezen oplossingen.",
+    "methodsText1": "Ik doe dit door zowel nieuwe technologieën te leren als mijn bestaande kennis te verdiepen. Het draait om een balans tussen innovatie en de praktische toepassing van bewezen oplossingen.",
     "methodsLearning": "Leermethode",
-    "methodsText2": "Via boeken zoals 'Clean Code' en 'Don't Make Me Think', combined met AI-gestuurde leermethodes. Altijd zoekend naar manieren om code kwaliteit en onderhoudbaarheid te verbeteren."
+    "methodsText2": "Ik leer met behulp van boeken als 'Clean Code' en 'Don't Make Me Think', gecombineerd met AI-gestuurde leermethodes. Ik zoek altijd naar manieren om de codekwaliteit en onderhoudbaarheid te verbeteren."
   },
   "footer": {
     "about": "Over",
-    "description": "Documentatie van mijn stageverloop bij [Bedrijfsnaam] als onderdeel van het Graduaat Programmeren aan AP Hogeschool.",
-    "quickLinks": "Snelle Links",
+    "description": "Documentatie van mijn stageverloop bij [Bedrijfsnaam] als onderdeel van het graduaat Programmeren aan de AP Hogeschool.",
+    "quickLinks": "Snelle links",
     "connect": "Verbinden",
     "copyright": "© {year} Portfolio WPL. Alle rechten voorbehouden."
   },
