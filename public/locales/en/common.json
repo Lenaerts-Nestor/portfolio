@@ -15,12 +15,18 @@
     "quickOverview": "Quick Overview",
     "internshipDetails": "Internship Details",
     "technologies": "Technologies",
+    "projects": "Projects",
     "position": "Position",
     "duration": "Duration",
     "techUsed": "Techs Used",
     "experienceTitle": "Experience",
     "coreSkillsTitle": "Core Skills",
     "educationTitle": "Education",
+    "techDescription": "This is the stack of tech I'm able to work with. More will be added soon!",
+    "projectsDescription": "Here are my key projects demonstrating my technical capabilities.",
+    "experienceDescription": "My professional journey in the tech industry so far.",
+    "skillsDescription": "Core competencies I bring to development teams.",
+    "educationDescription": "My formal education in information technology.",
     "positions": {
       "ictConsultant": "ICT Consultant",
       "ictSupport": "ICT Support Specialist"
@@ -61,7 +67,7 @@
     ]
   },
   "about": {
-    "title": "Web Developer in Training",
+    "title": "Full-Stack Developer in Training",
     "educationTitle": "My Learning Journey",
     "educationText": "I'm currently studying Programming at AP Hogeschool, learning both frontend and backend development. While I enjoy the logic of backend work, I'm also working on improving my frontend skills to build complete applications from start to finish.",
     "languagesTitle": "Languages I Speak",
@@ -71,7 +77,22 @@
     "aiPhilosophyText": "I see AI as a helpful partner in coding - great for suggesting improvements and catching mistakes, while I keep full control and understanding of my projects.",
     "aiApproach": "How I Use It",
     "aiApproachText": "I mainly use AI for: Getting code suggestions, improving existing solutions, and writing documentation. I'm careful never to share private code or data with AI tools.",
-    "aiExample": "While building this portfolio, I used AI for layout ideas and troubleshooting, but every decision and line of code is my own."
+    "aiExample": "While building this portfolio, I used AI for layout ideas and troubleshooting, but every decision and line of code is my own.",
+    "goalsTitle": "My Goals",
+    "goalsText": "I aim to become a fullstack developer focused on maintaining and optimizing existing systems. My priority is improving efficiency and functionality rather than always building new technologies.",
+    "goalsPhilosophy": "It's not just about creating new features, but about keeping existing systems future-proof and maintainable.",
+    "methodsTitle": "My Methods",
+    "methodsApproach": "Building Knowledge",
+    "methodsText1": "By learning new technologies while deepening existing knowledge. Finding balance between innovation and practical application of proven solutions.",
+    "methodsLearning": "Learning Approach",
+    "methodsText2": "Through books like 'Clean Code' and 'Don't Make Me Think', combined with AI-driven learning methods. Always seeking ways to improve code quality and maintainability."
+  },
+  "footer": {
+    "about": "About",
+    "description": "Documenting my internship journey at [Company Name] as part of the AP Hogeschool Programming program.",
+    "quickLinks": "Quick Links",
+    "connect": "Connect",
+    "copyright": "© {year} Portfolio WPL. All rights reserved."
   },
   "toggleLanguage": "Toggle language"
 }

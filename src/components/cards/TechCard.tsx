@@ -1,4 +1,3 @@
-// src/components/InfoCard.tsx
 import Link from "next/link";
 import Image from "next/image";
 import { projects } from "@/config/projects";
@@ -6,8 +5,13 @@ import { useTranslation } from "next-i18next";
 import { Briefcase } from "lucide-react";
 import { Project } from "@/interfaces/interface";
 
-// src/components/InfoCard.tsx
-export default function InfoCard({ project }: { project: Project }) {
+export default function TechCard({
+  project,
+  className,
+}: {
+  project: Project;
+  className?: string;
+}) {
   const { t } = useTranslation("common");
 
   return (
@@ -15,7 +19,9 @@ export default function InfoCard({ project }: { project: Project }) {
       href={project.href}
       className="group flex flex-1 h-full transform transition-all duration-300 hover:scale-[1.02] hover:z-10"
     >
-      <div className="w-full h-full bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md flex flex-col min-h-[320px]">
+      <div
+        className={`w-full h-full bg-white rounded-xl border border-slate-200 p-6 shadow-sm hover:shadow-md flex flex-col min-h-[320px] ${className}`}
+      >
         {/* Main Content */}
         <div className="flex flex-col items-center text-center mb-6 space-y-4">
           <div className="bg-indigo-100 text-indigo-600 w-12 h-12 rounded-lg flex items-center justify-center">

@@ -1,6 +1,12 @@
 // src/pages/about.tsx
 import { useTranslation } from "next-i18next";
-import { GraduationCap, Languages, BrainCircuit } from "lucide-react";
+import {
+  GraduationCap,
+  Languages,
+  BrainCircuit,
+  Target,
+  BookOpen,
+} from "lucide-react";
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
@@ -17,6 +23,51 @@ export default function About() {
         <h2 className="text-2xl font-semibold text-slate-800">
           {t("about.title")}
         </h2>
+      </section>
+
+      {/* Goals Section */}
+      <section className="mb-12">
+        <div className="flex items-center gap-3 mb-6">
+          <Target className="w-8 h-8 text-indigo-600" />
+          <h3 className="text-xl font-semibold text-slate-800">
+            {t("about.goalsTitle")}
+          </h3>
+        </div>
+        <p className="text-slate-600 leading-relaxed mb-6">
+          {t("about.goalsText")}
+        </p>
+        <div className="border-l-4 border-indigo-100 pl-4">
+          <p className="text-slate-600 italic">{t("about.goalsPhilosophy")}</p>
+        </div>
+      </section>
+
+      {/* Methods Section */}
+      <section className="mb-12">
+        <div className="flex items-center gap-3 mb-6">
+          <BookOpen className="w-8 h-8 text-indigo-600" />
+          <h3 className="text-xl font-semibold text-slate-800">
+            {t("about.methodsTitle")}
+          </h3>
+        </div>
+        <div className="space-y-6">
+          <div className="border-l-4 border-indigo-100 pl-4">
+            <h4 className="text-lg font-semibold mb-3 text-slate-800">
+              {t("about.methodsApproach")}
+            </h4>
+            <p className="text-slate-600 leading-relaxed">
+              {t("about.methodsText1")}
+            </p>
+          </div>
+
+          <div className="border-l-4 border-indigo-100 pl-4">
+            <h4 className="text-lg font-semibold mb-3 text-slate-800">
+              {t("about.methodsLearning")}
+            </h4>
+            <p className="text-slate-600 leading-relaxed">
+              {t("about.methodsText2")}
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Education Section */}
@@ -81,6 +132,7 @@ export default function About() {
     </div>
   );
 }
+
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale ?? "nl", ["common"])),

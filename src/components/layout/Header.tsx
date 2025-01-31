@@ -23,7 +23,7 @@ export default function Header() {
             href="/"
             className="font-bold text-2xl text-slate-800 hover:text-indigo-600 transition-colors"
           >
-            Portfolio WPL
+            Portfolio
           </Link>
 
           {/* Desktop Navigation */}
@@ -59,17 +59,6 @@ export default function Header() {
               } transition-colors`}
             >
               {t("navigation.blog")}
-            </Link>
-
-            <Link
-              href="/documentation"
-              className={`px-3 py-2 text-sm font-medium ${
-                isActive("/documentation")
-                  ? "text-indigo-600 border-b-2 border-indigo-600"
-                  : "text-slate-600 hover:text-indigo-600"
-              } transition-colors`}
-            >
-              {t("navigation.documentation")}
             </Link>
 
             <div className="pl-4 border-l border-slate-200">
@@ -127,18 +116,6 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               {t("navigation.blog")}
-            </Link>
-
-            <Link
-              href="/documentation"
-              className={`block px-4 py-2 text-sm ${
-                isActive("/documentation")
-                  ? "text-indigo-600 bg-indigo-50 rounded-lg"
-                  : "text-slate-600 hover:bg-slate-50"
-              }`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {t("navigation.documentation")}
             </Link>
           </div>
         )}

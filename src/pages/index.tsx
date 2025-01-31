@@ -7,7 +7,7 @@ import { techStack } from "@/config/techStack";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { projects } from "@/config/projects";
 import TechGrid from "@/components/TechGrid";
-import InfoCard from "@/components/cards/InfoCard";
+import TechCard from "@/components/cards/TechCard";
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -46,32 +46,49 @@ export default function Home() {
         </section>
 
         {/* Technologies Section */}
-        <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
-          {t("home.technologies")}
-          <span className="absolute left-0 right-0 -bottom-4 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
-        </h2>
-        <TechGrid technologies={techStack} className="mb-12" />
+        <section className="mb-12">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
+            {t("home.technologies")}
+            <span className="absolute left-0 right-0 -bottom-6 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
+          </h2>
+          <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+            {t("home.techDescription")}
+          </p>
+          <TechGrid technologies={techStack} className="mb-8" />
+        </section>
 
         {/* Projects Section */}
-        <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
-          {t("home.technologies")}
-          <span className="absolute left-0 right-0 -bottom-4 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
-        </h2>
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {projects.map((project) => (
-            <InfoCard key={project.title} project={project} />
-          ))}
+        <section className="mb-12">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
+            {t("home.projects")}
+            <span className="absolute left-0 right-0 -bottom-6 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
+          </h2>
+          <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+            {t("home.projectsDescription")}
+          </p>
+          <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {projects.map((project) => (
+              <TechCard
+                key={project.title}
+                project={project}
+                className="border border-slate-300" // Custom class passed here
+              />
+            ))}
+          </section>
         </section>
 
         {/* Experience Section */}
-        <section>
-          <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
+        <section className="mb-12">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
             {t("home.experienceTitle")}
-            <span className="absolute left-0 right-0 -bottom-4 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
+            <span className="absolute left-0 right-0 -bottom-6 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
           </h2>
-          <section className="space-y-6 mb-12 max-w-3xl mx-auto">
+          <section className="space-y-6 mb-8 max-w-3xl mx-auto">
+            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+              {t("home.experienceDescription")}
+            </p>
             {/* Beego Experience */}
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-300">
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800">
@@ -94,7 +111,7 @@ export default function Home() {
             </div>
 
             {/* Digipolis Experience */}
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-300">
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800">
@@ -119,18 +136,21 @@ export default function Home() {
         </section>
 
         {/* Core Skills Section */}
-        <section>
-          <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
+        <section className="mb-12">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
             {t("home.coreSkillsTitle")}
-            <span className="absolute left-0 right-0 -bottom-4 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
+            <span className="absolute left-0 right-0 -bottom-6 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
           </h2>
-          <section className="mb-12 max-w-3xl mx-auto">
+          <section className="mb-8 max-w-3xl mx-auto">
+            <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+              {t("home.skillsDescription")}
+            </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {(t("home.skills", { returnObjects: true }) as string[]).map(
                 (skill) => (
                   <div
                     key={skill}
-                    className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center"
+                    className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center border border-slate-300"
                   >
                     <span className="text-indigo-600 font-medium">{skill}</span>
                   </div>
@@ -141,13 +161,16 @@ export default function Home() {
         </section>
 
         {/* Education Section */}
-        <section>
-          <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
+        <section className="mb-12">
+          <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
             {t("home.educationTitle")}
-            <span className="absolute left-0 right-0 -bottom-4 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
+            <span className="absolute left-0 right-0 -bottom-6 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
           </h2>
-          <section className="mb-12 max-w-3xl mx-auto">
-            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+          <p className="text-center text-slate-600 mb-8 max-w-2xl mx-auto">
+            {t("home.educationDescription")}
+          </p>
+          <section className="mb-8 max-w-3xl mx-auto">
+            <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-300">
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800">
