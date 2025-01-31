@@ -126,14 +126,16 @@ export default function Home() {
           </h2>
           <section className="mb-12 max-w-3xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {t("home.skills", { returnObjects: true }).map((skill) => (
-                <div
-                  key={skill}
-                  className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center"
-                >
-                  <span className="text-indigo-600 font-medium">{skill}</span>
-                </div>
-              ))}
+              {(t("home.skills", { returnObjects: true }) as string[]).map(
+                (skill) => (
+                  <div
+                    key={skill}
+                    className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center"
+                  >
+                    <span className="text-indigo-600 font-medium">{skill}</span>
+                  </div>
+                )
+              )}
             </div>
           </section>
         </section>
