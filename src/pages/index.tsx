@@ -20,7 +20,6 @@ export default function Home() {
       </Head>
 
       <div className="max-w-6xl mx-auto px-4">
-        {/* Hero Section */}
         <section className="text-center py-16 md:py-24">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
             {t("home.welcome")}
@@ -45,11 +44,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Technologies Infinite Scroll */}
+        <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
+          Technologies
+          <span className="absolute left-0 right-0 -bottom-4 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
+        </h2>
+
+        {/** i want a a title here saying "technologies" on big  */}
         <TechGrid technologies={techStack} className="mb-12" />
 
-        {/* Information Cards */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <h2 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
+          Projects
+          <span className="absolute left-0 right-0 -bottom-4 h-0.5 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto max-w-6xl"></span>
+        </h2>
+
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {projects.map((project) => (
             <InfoCard key={project.title} project={project} />
           ))}

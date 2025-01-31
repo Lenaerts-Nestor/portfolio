@@ -20,17 +20,17 @@
     "techUsed": "Gebruikte Technologieën"
   },
   "about": {
-    "title": "Aspirerend Full Stack Developer",
-    "educationTitle": "Opleiding & Focus",
-    "educationText": "Ik studeer momenteel programmeren aan AP Hogeschool, met specialisatie in full-stack ontwikkeling. Hoewel ik een natuurlijke aanleg heb voor backend-systemen, breid ik actief mijn frontend-expertise uit om een veelzijdige ontwikkelaar te worden die alle aspecten van moderne webontwikkeling aankan.",
-    "languagesTitle": "Taalvaardigheid",
-    "languagesText": "Vloeiend in drie talen: Spaans (moedertaal), Nederlands (professionele vaardigheid) en Engels (professionele vaardigheid). Deze meertaligheid maakt effectieve samenwerking in internationale teams mogelijk en het begrijpen van technische documentatie in verschillende talen.",
-    "aiTitle": "AI in Ontwikkeling",
-    "aiPhilosophy": "Strategische AI-integratie",
-    "aiPhilosophyText": "Ik benader AI als een krachtig collaboratief hulpmiddel dat ontwikkelaarsexpertise versterkt in plaats van vervangt. Mijn focus ligt op het gebruik van AI voor codekwaliteitsverbeteringen, architecturale begeleiding en efficiënt probleemoplossend vermogen, terwijl ik volledig begrip en eigendom van de codebase behoud.",
-    "aiApproach": "Praktische Implementatie",
-    "aiApproachText": "In mijn workflow gebruik ik AI voor specifieke taken: het analyseren van codepatronen, het genereren van documentatiedrafts en het verkennen van alternatieve implementatiestrategieën. Ik handhaaf strikte ethische normen door nooit gevoelige code of eigendomsinformatie te delen met AI-systemen.",
-    "aiExample": "De ontwikkeling van dit portfolio omvatte AI voor structurele aanbevelingen en efficiëntie-optimalisaties, terwijl ik volledige controle en begrip van alle implementatiedetails behield."
+    "title": "Aankomend Web Developer",
+    "educationTitle": "Mijn Leertraject",
+    "educationText": "Ik studeer momenteel Programmeren aan AP Hogeschool, waar ik zowel frontend als backend ontwikkeling leer. Hoewel ik backend werk het leukst vind, werk ik ook hard aan mijn frontend vaardigheden om complete applicaties te kunnen bouwen.",
+    "languagesTitle": "Talen die ik spreek",
+    "languagesText": "Moedertaal Spaans, vloeiend in Nederlands en comfortabel met Engels. Dit helpt me goed samen te werken in diverse teams en technische bronnen in meerdere talen te begrijpen.",
+    "aiTitle": "Mijn Kijk op AI",
+    "aiPhilosophy": "AI Slim Inzetten",
+    "aiPhilosophyText": "Ik zie AI als een handige hulp bij het programmeren - ideaal voor suggesties en het vinden van fouten, terwijl ik zelf de controle en begrip over mijn projecten houd.",
+    "aiApproach": "Hoe Ik Het Gebruik",
+    "aiApproachText": "Ik gebruik AI vooral voor: Code suggesties, bestaande oplossingen verbeteren, en documentatie schrijven. Ik ben altijd zorgvuldig met privacy en deel nooit gevoelige code of data.",
+    "aiExample": "Bij het bouwen van dit portfolio kreeg ik AI-suggesties voor layout en problemen oplossen, maar alle keuzes en code zijn door mij gemaakt."
   },
   "toggleLanguage": "Taal wisselen"
 }

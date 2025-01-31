@@ -20,17 +20,17 @@
     "techUsed": "Techs Used"
   },
   "about": {
-    "title": "Aspiring Full Stack Developer",
-    "educationTitle": "Education & Focus",
-    "educationText": "I'm currently pursuing my Programming degree at AP Hogeschool, specializing in full-stack development. While I have a natural aptitude for backend systems, I'm actively expanding my frontend expertise to become a versatile developer capable of handling all aspects of modern web development.",
-    "languagesTitle": "Language Proficiency",
-    "languagesText": "Fluent in three languages: Spanish (native), Dutch (professional proficiency), and English (professional proficiency). This multilingual capability enables effective collaboration in international teams and understanding of technical documentation across languages.",
-    "aiTitle": "AI in Development",
-    "aiPhilosophy": "Strategic AI Integration",
-    "aiPhilosophyText": "I approach AI as a powerful collaborative tool that enhances rather than replaces developer expertise. My focus is on using AI for code quality improvements, architectural guidance, and efficient problem-solving while maintaining complete understanding and ownership of the codebase.",
-    "aiApproach": "Practical Implementation",
-    "aiApproachText": "In my workflow, I employ AI for specific tasks: analyzing code patterns, generating documentation drafts, and exploring alternative implementation strategies. I maintain strict ethical standards by never sharing sensitive code or proprietary information with AI systems.",
-    "aiExample": "This portfolio's development incorporated AI for structural recommendations and efficiency optimizations, while maintaining full control and understanding of all implementation details."
+    "title": "Web Developer in Training",
+    "educationTitle": "My Learning Journey",
+    "educationText": "I'm currently studying Programming at AP Hogeschool, learning both frontend and backend development. While I enjoy the logic of backend work, I'm also working on improving my frontend skills to build complete applications from start to finish.",
+    "languagesTitle": "Languages I Speak",
+    "languagesText": "Native Spanish speaker, fluent in Dutch, and comfortable working in English. This helps me work well in diverse teams and understand technical resources in multiple languages.",
+    "aiTitle": "My Approach to AI",
+    "aiPhilosophy": "Using AI Smartly",
+    "aiPhilosophyText": "I see AI as a helpful partner in coding - great for suggesting improvements and catching mistakes, while I keep full control and understanding of my projects.",
+    "aiApproach": "How I Use It",
+    "aiApproachText": "I mainly use AI for: Getting code suggestions, improving existing solutions, and writing documentation. I'm careful never to share private code or data with AI tools.",
+    "aiExample": "While building this portfolio, I used AI for layout ideas and troubleshooting, but every decision and line of code is my own."
   },
   "toggleLanguage": "Toggle language"
 }

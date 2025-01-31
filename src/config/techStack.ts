@@ -67,4 +67,14 @@ export const techStack: TechStackItem[] = [
     iconPath: "/icons/html.png",
     color: "text-[#E34F26]",
   },
+  {
+    name: "MonoGame",
+    iconPath: "/icons/monogame.png",
+    color: "text-[#6A0DAD]",
+  },
+  {
+    name: "Express.js",
+    iconPath: "/icons/express.png",
+    color: "text-black",
+  },
 ];
