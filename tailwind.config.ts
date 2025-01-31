@@ -12,6 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        "spin-in": "spinIn 0.3s ease-in-out",
+      },
+      keyframes: {
+        spinIn: {
+          "0%": { transform: "rotate(-90deg)", opacity: "0" },
+          "100%": { transform: "rotate(0deg)", opacity: "1" },
+        },
+      },
     },
   },
   plugins: [],
