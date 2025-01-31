@@ -123,10 +123,6 @@ export default function About() {
               {t("about.aiApproachText")}
             </p>
           </div>
-
-          <blockquote className="text-slate-600 italic border-l-4 border-indigo-600 pl-4 py-2">
-            {t("about.aiExample")}
-          </blockquote>
         </div>
       </section>
     </div>
