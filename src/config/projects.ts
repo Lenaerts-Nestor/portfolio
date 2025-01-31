@@ -1,11 +1,5 @@
-import { TechStackItem } from "./techStack";
-
-export interface Project {
-  title: string;
-  description: string;
-  href: string;
-  techs: TechStackItem[];
-}
+import { Project } from "@/interfaces/interface";
+import { TechStackItem } from "@/interfaces/interface";
 
 export const projects: Project[] = [
   {

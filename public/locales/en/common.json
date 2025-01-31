@@ -17,7 +17,48 @@
     "technologies": "Technologies",
     "position": "Position",
     "duration": "Duration",
-    "techUsed": "Techs Used"
+    "techUsed": "Techs Used",
+    "experienceTitle": "Experience",
+    "coreSkillsTitle": "Core Skills",
+    "educationTitle": "Education",
+    "positions": {
+      "ictConsultant": "ICT Consultant",
+      "ictSupport": "ICT Support Specialist"
+    },
+    "companies": {
+      "beego": "Beego",
+      "digipolis": "Digipolis"
+    },
+    "experienceDates": {
+      "beego": "Oct 2023 - May 2024",
+      "digipolis": "Aug 2024 - Sep 2024"
+    },
+    "locations": {
+      "remote": "Remote · Temporary Contract",
+      "antwerp": "Antwerpen, Belgium · Temporary Contract"
+    },
+    "experienceDescriptions": {
+      "beego": "Helped clients with basic tech issues at their homes or businesses, like fixing computers and explaining how to stay safe online.",
+      "digipolis": "Learned the basics of ICT support by setting up computers and helping with network setups. It was a good way to see how things work outside of programming."
+    },
+    "education": {
+      "degree": "Graduaat, Information Technology",
+      "school": "AP Hogeschool Antwerpen",
+      "duration": "Sep 2023 - Jun 2025",
+      "courses": "Relevant courses:",
+      "courseList": {
+        "web": "Web Development",
+        "systems": "System Administration"
+      }
+    },
+    "skills": [
+      "Technical Support",
+      "IT Consulting",
+      "Inventory Management",
+      "Communication",
+      "Customer Service",
+      "Problem Solving"
+    ]
   },
   "about": {
     "title": "Web Developer in Training",

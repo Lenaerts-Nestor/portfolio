@@ -1,9 +1,10 @@
 // src/components/InfoCard.tsx
 import Link from "next/link";
 import Image from "next/image";
-import { Project } from "@/config/projects";
+import { projects } from "@/config/projects";
 import { useTranslation } from "next-i18next";
 import { Briefcase } from "lucide-react";
+import { Project } from "@/interfaces/interface";
 
 // src/components/InfoCard.tsx
 export default function InfoCard({ project }: { project: Project }) {

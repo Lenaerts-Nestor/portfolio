@@ -1,10 +1,6 @@
 // src/config/techStack.ts
 
-export interface TechStackItem {
-  name: string;
-  iconPath: string;
-  color: string;
-}
+import { TechStackItem } from "@/interfaces/interface";
 
 export const techStack: TechStackItem[] = [
   {

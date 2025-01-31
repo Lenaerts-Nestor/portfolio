@@ -17,7 +17,48 @@
     "technologies": "Technologieën",
     "position": "Positie",
     "duration": "Looptijd",
-    "techUsed": "Gebruikte Technologieën"
+    "techUsed": "Gebruikte Technologieën",
+    "experienceTitle": "Ervaring",
+    "coreSkillsTitle": "Kernvaardigheden",
+    "educationTitle": "Opleiding",
+    "positions": {
+      "ictConsultant": "ICT Consultant",
+      "ictSupport": "ICT Support Specialist"
+    },
+    "companies": {
+      "beego": "Beego",
+      "digipolis": "Digipolis"
+    },
+    "experienceDates": {
+      "beego": "Okt 2023 - Mei 2024",
+      "digipolis": "Aug 2024 - Sep 2024"
+    },
+    "locations": {
+      "remote": "Op afstand · Tijdelijk contract",
+      "antwerp": "Antwerpen, België · Tijdelijk contract"
+    },
+    "experienceDescriptions": {
+      "beego": "Hielp klanten met basis technische problemen thuis of op het werk, zoals computers repareren en uitleggen hoe ze veilig online kunnen blijven.",
+      "digipolis": "Leerde de basis van ICT-ondersteuning door computers in te stellen en te helpen met netwerkinstallaties. Een goede manier om te zien hoe dingen werken buiten programmeren."
+    },
+    "education": {
+      "degree": "Graduaat, Informatica",
+      "school": "AP Hogeschool Antwerpen",
+      "duration": "Sep 2023 - Jun 2025",
+      "courses": "Relevante vakken:",
+      "courseList": {
+        "web": "Webontwikkeling",
+        "systems": "Systeembeheer"
+      }
+    },
+    "skills": [
+      "Technische ondersteuning",
+      "IT-advies",
+      "Voorraadbeheer",
+      "Communicatie",
+      "Klantenservice",
+      "Probleemoplossing"
+    ]
   },
   "about": {
     "title": "Aankomend Web Developer",

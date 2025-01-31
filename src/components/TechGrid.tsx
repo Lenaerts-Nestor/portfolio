@@ -1,12 +1,9 @@
 // src/components/TechGrid.tsx
 import React from "react";
 import Image from "next/image";
-import { TechStackItem } from "@/config/techStack";
+import { TechStackItem } from "@/interfaces/interface";
 
-interface TechGridProps {
-  technologies: TechStackItem[];
-  className?: string;
-}
+import { TechGridProps } from "@/interfaces/interface";
 
 export default function TechGrid({
   technologies,

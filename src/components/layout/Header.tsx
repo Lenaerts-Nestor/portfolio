@@ -15,7 +15,8 @@ export default function Header() {
   const isActive = (pathname: string) => router.pathname === pathname;
 
   return (
-    <header className="bg-white border-b border-slate-200 shadow-sm">
+    // In Header.tsx, modify the header className:
+    <header className="bg-white border-b border-slate-200 shadow-sm sticky top-0 z-50">
       <nav className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link
@@ -76,14 +77,17 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors text-slate-600"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Menu Button and Language Switcher */}
+          <div className="flex items-center space-x-4 md:hidden">
+            <LanguageSwitcher />
+            <button
+              className="p-2 rounded-lg hover:bg-slate-100 transition-colors text-slate-600"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -136,10 +140,6 @@ export default function Header() {
             >
               {t("navigation.documentation")}
             </Link>
-
-            <div className="pt-4 border-t border-slate-200">
-              <LanguageSwitcher />
-            </div>
           </div>
         )}
       </nav>
