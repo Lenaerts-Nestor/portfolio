@@ -87,7 +87,7 @@ export default function Header() {
             isMenuOpen ? "max-h-96" : "max-h-0"
           }`}
         >
-          <div className="py-4 space-y-4 border-t border-slate-300">
+          <div className="py-4 space-y-4 border-t border-slate-300 text-center">
             <Link
               href="/"
               className={`block px-4 py-3 text-base ${
@@ -124,22 +124,22 @@ export default function Header() {
               {t("navigation.blog")}
             </Link>
 
-            <div className="flex justify-center space-x-6 pt-4 border-t border-slate-200">
+            <div className="flex justify-center space-x-8 pt-6 px-8 border-t border-slate-200">
               <Link
-                href="https://github.com"
+                href="https://github.com/Lenaerts-Nestor"
                 target="_blank"
-                className="text-slate-700 hover:text-indigo-600 transition-colors"
+                className="hover:opacity-80 transition-opacity"
                 aria-label="GitHub"
               >
-                <Github size={24} />
+                <Github size={24} style={{ color: "#181717" }} />
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/nestor-lenaerts-4652381b9/"
                 target="_blank"
-                className="text-slate-700 hover:text-indigo-600 transition-colors"
+                className="hover:opacity-80 transition-opacity"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={24} />
+                <Linkedin size={24} style={{ color: "#0A66C2" }} />
               </Link>
             </div>
           </div>

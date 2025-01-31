@@ -1,6 +1,6 @@
 // src/components/layout/Footer.tsx
-import Link from 'next/link';
-import { Github, Linkedin } from 'lucide-react';
+import Link from "next/link";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,31 +13,46 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">About</h3>
             <p className="text-gray-400 leading-relaxed">
-              Documenting my internship journey at [Company Name] as part of the AP Hogeschool Programming program.
+              Documenting my internship journey at [Company Name] as part of the
+              AP Hogeschool Programming program.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Link
+                  href="/"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Link
+                  href="/about"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Link
+                  href="/blog"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/documentation" className="text-gray-400 hover:text-blue-400 transition-colors">
+                <Link
+                  href="/documentation"
+                  className="text-gray-400 hover:text-blue-400 transition-colors"
+                >
                   Documentation
                 </Link>
               </li>
@@ -48,18 +63,18 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a 
-                href="https://www.linkedin.com/in/nestor-lenaerts-4652381b9/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/nestor-lenaerts-4652381b9/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
               </a>
-              <a 
-                href="https://github.com/Lenaerts-Nestor" 
-                target="_blank" 
+              <a
+                href="https://github.com/Lenaerts-Nestor"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 aria-label="GitHub"
