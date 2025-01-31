@@ -136,6 +136,7 @@ export default function Home() {
         </section>
 
         {/* Core Skills Section */}
+        {/* Core Skills Section */}
         <section className="mb-12">
           <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent relative">
             {t("home.coreSkillsTitle")}
@@ -150,9 +151,11 @@ export default function Home() {
                 (skill) => (
                   <div
                     key={skill}
-                    className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center border border-slate-300"
+                    className="p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-center border border-slate-300 flex items-center justify-center min-h-[120px] md:min-h-[100px]"
                   >
-                    <span className="text-indigo-600 font-medium">{skill}</span>
+                    <span className="text-indigo-600 font-medium text-sm md:text-base break-words">
+                      {skill}
+                    </span>
                   </div>
                 )
               )}
