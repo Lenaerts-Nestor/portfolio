@@ -9,16 +9,40 @@ const Modal = ({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto">
+    <div className="fixed inset-0 z-50">
       <div className="fixed inset-0 bg-black bg-opacity-50 transition-opacity" onClick={onClose} />
       <div className="flex min-h-full items-center justify-center p-4">
-        <div className="relative w-full max-w-4xl max-h-[90vh] overflow-hidden rounded-2xl bg-white shadow-xl transition-all">
-          {children}
+        <div className="relative w-full max-w-4xl max-h-[90vh] bg-white shadow-xl transition-all rounded-2xl flex flex-col">
+          <div className="flex justify-between items-center p-6 border-b border-slate-200">
+            <h2 className="text-2xl font-bold text-slate-800">Week 1</h2>
+            <button
+              onClick={onClose}
+              className="p-2 hover:bg-red-100 rounded-full transition-colors"
+            >
+              <X className="w-6 h-6 text-red-500" />
+            </button>
+          </div>
+          <div className="overflow-y-auto no-scrollbar flex-1">
+            {children}
+          </div>
         </div>
       </div>
     </div>
   );
 };
+
+// Add this to your global CSS file or as a style tag in your _app.tsx
+const GlobalStyle = () => (
+  <style jsx global>{`
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  `}</style>
+);
 
 const BlogPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,6 +53,7 @@ const BlogPage = () => {
 
   return (
     <>
+      <GlobalStyle />
       <Head>
         <title>{`WPL Portfolio - ${t("navigation.blog")}`}</title>
         <meta name="description" content={t("blog.description")} />
@@ -70,19 +95,7 @@ const BlogPage = () => {
         </section>
 
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-          <div className="p-8 max-h-[calc(90vh-4rem)] overflow-y-auto">
-            <div className="flex justify-between items-center mb-8">
-              <h2 className="text-3xl font-bold text-slate-800">
-                {t("blog.weekOverview")}
-              </h2>
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="p-2 hover:bg-red-100 rounded-full transition-colors"
-              >
-                <X className="w-6 h-6 text-red-500" />
-              </button>
-            </div>
-
+          <div className="p-6">
             <div className="space-y-6">
               {updates.map((update, index) => (
                 <div
