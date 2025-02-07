@@ -17,10 +17,10 @@ export default function About() {
     <div className="max-w-3xl mx-auto px-4 py-12 prose lg:prose-lg">
       {/* Introduction */}
       <section className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold mb-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent leading-[1.2] tracking-normal py-1">
           Nestor Lenaerts
         </h1>
-        <h2 className="text-2xl font-semibold text-slate-800">
+        <h2 className="text-2xl font-semibold text-slate-800 leading-[1.4]">
           {t("about.title")}
         </h2>
       </section>

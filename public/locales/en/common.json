@@ -94,5 +94,41 @@
     "connect": "Connect",
     "copyright": "© {year} Portfolio WPL. All rights reserved."
   },
+  "blog": {
+    "title": "My Internship Journey",
+    "description": "Follow my adventures and lessons during my internship at the company",
+    "readMore": "Read more",
+    "weekOverview": "Week 1 ",
+    "dailyUpdates": {
+      "title": "Daily Updates",
+      "close": "Close",
+      "week1": {
+        "overview": "This week I focused on learning the AmoDrive coding architecture, understanding the project structure, and improving my coding style with the help of my seniors.",
+        "days": [
+          {
+            "date": "February 3",
+            "content": "Today I started getting familiar with the project. I received instructions on account management and adding new projects. I also analyzed the project files and got an explanation about Storybook. It was a lot of information to take in, but I'm glad I have a better understanding of how everything works now."
+          },
+          {
+            "date": "February 4",
+            "content": "Today I observed the seniors to see how they structure their components. I learned a lot about their workflow and how they organize their code.  After that, I started rewriting some components based on their advice. It took some time to get the hang of it, but I'm happy with the results.  I also spent some time working on the project's styling logic."
+          },
+          {
+            "date": "February 5",
+            "content": "Today I talked with my senior about the coding rules and our project approach. We discussed our coding conventions and best practices. I also got instructions on how to use GitHub for updates. I received feedback on my work and explored some new coding methods. It was a long day, but I learned a lot."
+          },
+          {
+            "date": "February 6",
+            "content": "Today I continued working on my project. I ran into some issues with GitHub, but with some help from my senior, I was able to fix most of the errors. I also reviewed some GitHub reviews and tried to incorporate the feedback into my code. It was frustrating at times, but I'm glad I made some progress."
+          },
+          {
+            "date": "February 7",
+            "content": "Today I finished up a few tickets related to forms, cards, and modals. I ran into some more GitHub issues because I couldn't merge my changes. I'm waiting on my senior for clear instructions. Hopefully, I can resolve this soon and continue working on my project."
+          }
+        ]
+      }
+    }
+  },
+
   "toggleLanguage": "Toggle language"
 }

@@ -94,5 +94,40 @@
     "connect": "Verbinden",
     "copyright": "© {year} Portfolio WPL. Alle rechten voorbehouden."
   },
+  "blog": {
+    "title": "Mijn Stage Reis",
+    "description": "Volg mijn avonturen en lessen tijdens mijn stage bij het bedrijf",
+    "readMore": "Lees meer",
+    "weekOverview": "Week 1",
+    "dailyUpdates": {
+      "title": "Dagelijkse Updates",
+      "close": "Sluiten",
+      "week1": {
+        "overview": "Deze week heb ik me gefocust op het leren van de AmoDrive coding architectuur, het begrijpen van de projectstructuur en het verbeteren van mijn codeerstijl, met de hulp van mijn seniors.",
+        "days": [
+          {
+            "date": "3 Februari",
+            "content": "Vandaag ben ik begonnen met het inwerken in het project. Ik heb instructies gekregen over accountbeheer en hoe ik projecten kan toevoegen. Ook heb ik de projectbestanden bekeken en een uitleg gekregen over Storybook. Het was veel informatie, maar ik ben blij dat ik nu een beter beeld heb van hoe alles werkt."
+          },
+          {
+            "date": "4 Februari",
+            "content": "Vandaag heb ik gekeken naar hoe de seniors de structuur van componenten aanpakken. Ik heb veel geleerd over hun manier van werken en hoe ze hun code organiseren. Daarna ben ik begonnen met het herschrijven van een aantal componenten op basis van hun advies. Het was even zoeken, maar ik ben tevreden met het resultaat. Tot slot heb ik nog wat tijd besteed aan de logica van de projectstyling."
+          },
+          {
+            "date": "5 Februari",
+            "content": "Vandaag heb ik met mijn senior gesproken over de codeerregels en hoe we projecten aanpakken. We hebben ook besproken hoe we met code omgaan en welke afspraken we hebben. Daarna heb ik instructies gekregen over hoe ik GitHub moet gebruiken om updates te doen. Ik heb ook feedback gekregen op mijn werk en gekeken naar nieuwe manieren van coderen. Het was een lange dag, maar ik heb veel geleerd."
+          },
+          {
+            "date": "6 Februari",
+            "content": "Vandaag heb ik verder gewerkt aan mijn project. Ik heb wat problemen gehad met GitHub, maar met wat hulp van mijn senior heb ik de meeste errors kunnen oplossen. Ik heb ook gekeken naar GitHub reviews en geprobeerd de feedback te verwerken in mijn code. Het was soms frustrerend, maar ik ben blij dat ik weer een stap verder ben gekomen."
+          },
+          {
+            "date": "7 Februari",
+            "content": "Vandaag heb ik de laatste hand gelegd aan een aantal tickets over forms, cards en modals. Ik heb nog wat moeilijkheden gehad met GitHub, omdat ik niet kon mergen. Ik moet wachten op mijn senior voor duidelijke instructies. Hopelijk kan ik dit snel oplossen, zodat ik verder kan met mijn project."
+          }
+        ]
+      }
+    }
+  },
   "toggleLanguage": "Taal wisselen"
 }
