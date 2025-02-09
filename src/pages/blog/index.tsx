@@ -63,7 +63,7 @@ const BlogPage = () => {
         {/* Hero Section */}
         <section className="text-center pt-4 pb-8">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent leading-[1.2] tracking-normal">
+            <h1 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent leading-[1.4] tracking-normal py-1">
               {t("blog.title")}
             </h1>
             <p className="text-base text-slate-600 max-w-3xl mx-auto leading-relaxed">

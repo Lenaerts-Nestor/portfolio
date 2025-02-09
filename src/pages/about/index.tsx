@@ -1,4 +1,3 @@
-// src/pages/about.tsx
 import { useTranslation } from "next-i18next";
 import {
   GraduationCap,
@@ -9,6 +8,7 @@ import {
 } from "lucide-react";
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import AboutSection from "../../components/section/AboutSection";
 
 export default function About() {
   const { t } = useTranslation("common");
@@ -26,29 +26,17 @@ export default function About() {
       </section>
 
       {/* Goals Section */}
-      <section className="mb-12">
-        <div className="flex items-center gap-3 mb-6">
-          <Target className="w-8 h-8 text-indigo-600" />
-          <h3 className="text-xl font-semibold text-slate-800">
-            {t("about.goalsTitle")}
-          </h3>
-        </div>
+      <AboutSection icon={Target} title={t("about.goalsTitle")}>
         <p className="text-slate-600 leading-relaxed mb-6">
           {t("about.goalsText")}
         </p>
         <div className="border-l-4 border-indigo-100 pl-4">
           <p className="text-slate-600 italic">{t("about.goalsPhilosophy")}</p>
         </div>
-      </section>
+      </AboutSection>
 
       {/* Methods Section */}
-      <section className="mb-12">
-        <div className="flex items-center gap-3 mb-6">
-          <BookOpen className="w-8 h-8 text-indigo-600" />
-          <h3 className="text-xl font-semibold text-slate-800">
-            {t("about.methodsTitle")}
-          </h3>
-        </div>
+      <AboutSection icon={BookOpen} title={t("about.methodsTitle")}>
         <div className="space-y-6">
           <div className="border-l-4 border-indigo-100 pl-4">
             <h4 className="text-lg font-semibold mb-3 text-slate-800">
@@ -58,7 +46,6 @@ export default function About() {
               {t("about.methodsText1")}
             </p>
           </div>
-
           <div className="border-l-4 border-indigo-100 pl-4">
             <h4 className="text-lg font-semibold mb-3 text-slate-800">
               {t("about.methodsLearning")}
@@ -68,43 +55,24 @@ export default function About() {
             </p>
           </div>
         </div>
-      </section>
+      </AboutSection>
 
       {/* Education Section */}
-      <section className="mb-12">
-        <div className="flex items-center gap-3 mb-6">
-          <GraduationCap className="w-8 h-8 text-indigo-600" />
-          <h3 className="text-xl font-semibold text-slate-800">
-            {t("about.educationTitle")}
-          </h3>
-        </div>
-        <p className="text-slate-600 leading-relaxed mb-6">
+      <AboutSection icon={GraduationCap} title={t("about.educationTitle")}>
+        <p className="text-slate-600 leading-relaxed">
           {t("about.educationText")}
         </p>
-      </section>
+      </AboutSection>
 
       {/* Languages Section */}
-      <section className="mb-12">
-        <div className="flex items-center gap-3 mb-6">
-          <Languages className="w-8 h-8 text-indigo-600" />
-          <h3 className="text-xl font-semibold text-slate-800">
-            {t("about.languagesTitle")}
-          </h3>
-        </div>
+      <AboutSection icon={Languages} title={t("about.languagesTitle")}>
         <p className="text-slate-600 leading-relaxed">
           {t("about.languagesText")}
         </p>
-      </section>
+      </AboutSection>
 
       {/* AI Perspective Section */}
-      <section className="mb-12">
-        <div className="flex items-center gap-3 mb-6">
-          <BrainCircuit className="w-8 h-8 text-indigo-600" />
-          <h3 className="text-xl font-semibold text-slate-800">
-            {t("about.aiTitle")}
-          </h3>
-        </div>
-
+      <AboutSection icon={BrainCircuit} title={t("about.aiTitle")}>
         <div className="space-y-8">
           <div className="border-l-4 border-indigo-100 pl-4">
             <h4 className="text-lg font-semibold mb-3 text-slate-800">
@@ -114,7 +82,6 @@ export default function About() {
               {t("about.aiPhilosophyText")}
             </p>
           </div>
-
           <div className="border-l-4 border-indigo-100 pl-4">
             <h4 className="text-lg font-semibold mb-3 text-slate-800">
               {t("about.aiApproach")}
@@ -124,7 +91,7 @@ export default function About() {
             </p>
           </div>
         </div>
-      </section>
+      </AboutSection>
     </div>
   );
 }
