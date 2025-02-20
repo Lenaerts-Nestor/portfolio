@@ -5,12 +5,23 @@ import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
 
-const Modal = ({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => void; children: React.ReactNode }) => {
+const Modal = ({
+  isOpen,
+  onClose,
+  children,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+  children: React.ReactNode;
+}) => {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50">
-      <div className="fixed inset-0 bg-black bg-opacity-50 transition-opacity" onClick={onClose} />
+      <div
+        className="fixed inset-0 bg-black bg-opacity-50 transition-opacity"
+        onClick={onClose}
+      />
       <div className="flex min-h-full items-center justify-center p-4">
         <div className="relative w-full max-w-4xl max-h-[85vh] bg-white shadow-xl transition-all rounded-2xl flex flex-col">
           <div className="flex justify-between items-center p-6 border-b border-slate-200">
@@ -22,9 +33,7 @@ const Modal = ({ isOpen, onClose, children }: { isOpen: boolean; onClose: () => 
               <X className="w-6 h-6 text-red-500" />
             </button>
           </div>
-          <div className="overflow-y-auto no-scrollbar flex-1">
-            {children}
-          </div>
+          <div className="overflow-y-auto no-scrollbar flex-1">{children}</div>
         </div>
       </div>
     </div>
@@ -46,11 +55,14 @@ const GlobalStyle = () => (
 
 const BlogPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedWeek, setSelectedWeek] = useState(1);
+
   const { t } = useTranslation("common");
 
   // Get updates from translations
-  const updates = t("blog.dailyUpdates.week1.days", { returnObjects: true }) as Array<{ date: string; content: string }>;
-
+  const updates = t(`blog.dailyUpdates.week${selectedWeek}.days`, {
+    returnObjects: true,
+  }) as Array<{ date: string; content: string }>;
   return (
     <>
       <GlobalStyle />
@@ -74,24 +86,34 @@ const BlogPage = () => {
 
         {/* Blog Posts Grid */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-          <div
-            onClick={() => setIsModalOpen(true)}
-            className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer transform hover:scale-[1.02] flex flex-col"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <div className="bg-gradient-to-br from-indigo-500 to-purple-500 p-2 rounded-full">
-                <Calendar className="w-5 h-5 text-white" />
+          {[1, 2, 3].map((weekNumber) => (
+            <div
+              key={weekNumber}
+              onClick={() => {
+                setSelectedWeek(weekNumber);
+                setIsModalOpen(true);
+              }}
+              className="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer transform hover:scale-[1.02] flex flex-col"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-gradient-to-br from-indigo-500 to-purple-500 p-2 rounded-full">
+                  <Calendar className="w-5 h-5 text-white" />
+                </div>
+                <h2 className="text-xl font-bold text-slate-800">
+                  {t("blog.dailyUpdates.week" + weekNumber + ".title", {
+                    defaultValue: `Week ${weekNumber}`,
+                  })}
+                </h2>
               </div>
-              <h2 className="text-xl font-bold text-slate-800">Week 1</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                {t(`blog.dailyUpdates.week${weekNumber}.overview`)}
+              </p>
+              <div className="mt-auto flex items-center text-indigo-600 font-semibold">
+                <span>{t("blog.readMore")}</span>
+                <ChevronRight className="w-5 h-5 ml-1" />
+              </div>
             </div>
-            <p className="text-slate-600 leading-relaxed mb-4">
-              {t("blog.dailyUpdates.week1.overview")}
-            </p>
-            <div className="mt-auto flex items-center text-indigo-600 font-semibold">
-              <span>{t("blog.readMore")}</span>
-              <ChevronRight className="w-5 h-5 ml-1" />
-            </div>
-          </div>
+          ))}
         </section>
 
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>

@@ -126,6 +126,54 @@
             "content": "Today I finished up a few tickets related to forms, cards, and modals. I ran into some more GitHub issues because I couldn't merge my changes. I'm waiting on my senior for clear instructions. Hopefully, I can resolve this soon and continue working on my project."
           }
         ]
+      },
+      "week2": {
+        "title": "Week 2",
+        "overview": "This week I really started working on AmoTrack, my new project. We're using React, PostgreSQL, Drizzle and Fastify. Sounds pretty cool, but it takes some getting used to!",
+        "days": [
+          {
+            "date": "February 10",
+            "content": "Pfff, first day... and immediately a challenge! Drizzle and PostgreSQL had to be installed, and that was really a search. I had no idea where to start. Drizzle, I didn't know that yet, so I grabbed the documentation. And PostgreSQL... yeah, it's been a while too. Luckily I could also take a look at some older projects from the team, that helped. But it was quite a puzzle to get everything working."
+          },
+          {
+            "date": "February 11",
+            "content": "Yes! The connection to the database is successful! And I even created my first CRUD endpoint. But it was quite a puzzle, because there was something wrong with the project's template. I didn't realize that right away. I was really searching like 'What am I doing wrong?!' And I also got feedback from the seniors on my work from last week. Plenty to do!"
+          },
+          {
+            "date": "February 12",
+            "content": "Feedback time! My seniors really took a close look at my work. They gave me tips on how to think more logically and how to better collaborate with their workflow. I received both compliments and comments, so that's nice. I now know what I need to work on. For example, they said that I sometimes draw conclusions too quickly, and that I should think calmly before I start coding something."
+          },
+          {
+            "date": "February 13",
+            "content": "Today I created some new endpoints. But yeah, again that feedback: 'Think more logically!' and 'Use the Drizzle endpoint styling, it's much more efficient!'. I also had to figure out how to optimize my server files. Really no idea what they were talking about, haha! But I figured it out eventually. I googled a bit and watched some tutorials, and then I understood it luckily."
+          },
+          {
+            "date": "February 14",
+            "content": "I'm now waiting for feedback on my other PRs. I picked up a few tickets, for example one about adding a new feature to the user interface, and one about improving the performance of the API. I've already written the code and created a PR for it, but now it's just waiting for the review from my colleagues. I feel like I'm working a bit slow, but my colleagues say it's okay. I think I'm on the right track, but working with tickets and PRs takes some getting used to. It's all new to me. Such a PR is quite exciting, because then your code is checked by someone else. But it's also educational, because you get feedback and you learn new things."
+          }
+        ]
+      },
+      "week3": {
+        "title": "Week 3",
+        "overview": "This week was finally better! I've made some progress and my work style has improved.",
+        "days": [
+          {
+            "date": "February 17",
+            "content": "Still a bit frustrating, because I'm waiting for feedback on some components. But I was able to work on another ticket for AmoTrack."
+          },
+          {
+            "date": "February 18",
+            "content": "There was some confusion about which coding style I should follow. One senior wanted me to focus on scalability and efficiency, the other on small steps and thoroughness. Both good choices, and I learned a lot from both."
+          },
+          {
+            "date": "February 19",
+            "content": "Yes, my best day so far! Feedback on my PRs was super positive. Normally 50+ comments, now only 4 to 10, and mostly typos. I really feel like I'm getting better and more useful."
+          },
+          {
+            "date": "February 20",
+            "content": "Today I finished all my tickets from week 1 and got them approved. And I also got feedback from my backend senior. I think I'll refactor the backend tomorrow."
+          }
+        ]
       }
     }
   },

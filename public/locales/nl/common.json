@@ -126,6 +126,54 @@
             "content": "Vandaag heb ik de laatste hand gelegd aan een aantal tickets over forms, cards en modals. Ik heb nog wat moeilijkheden gehad met GitHub, omdat ik niet kon mergen. Ik moet wachten op mijn senior voor duidelijke instructies. Hopelijk kan ik dit snel oplossen, zodat ik verder kan met mijn project."
           }
         ]
+      },
+      "week2": {
+        "title": "Week 2",
+        "overview": "Deze week ben ik dus echt begonnen met AmoTrack, mijn nieuwe project. We gebruiken React, PostgreSQL, Drizzle en Fastify. Klinkt best cool, maar het is wel even inkomen hoor!",
+        "days": [
+          {
+            "date": "February 10",
+            "content": "Pfff, eerste dag... en meteen al een uitdaging! Drizzle en PostgreSQL moesten geïnstalleerd worden, en dat was echt even zoeken. Ik had geen idee waar ik moest beginnen. Drizzle, dat kende ik nog niet, dus de documentatie erbij gepakt. En PostgreSQL... ja, ook alweer even geleden. Gelukkig kon ik ook even spieken bij wat oudere projecten van het team, dat hielp wel. Maar het was wel even puzzelen om alles aan de praat te krijgen."
+          },
+          {
+            "date": "February 11",
+            "content": "Yes! De connectie met de database is gelukt! En ik heb zelfs mijn eerste CRUD-endpoint gemaakt. Maar het was wel even puzzelen, want er was iets met de template van het project. Dat had ik dus niet meteen door. Ik zat echt te zoeken van 'Wat doe ik nou verkeerd?!' En ik kreeg ook nog feedback van de seniors over mijn werk van vorige week. Genoeg te doen dus!"
+          },
+          {
+            "date": "February 12",
+            "content": "Feedback-time! Mijn seniors hebben me even flink onder de loep genomen. Ze hebben me tips gegeven over hoe ik logischer kan nadenken en hoe ik beter kan samenwerken met hun workflow. Ik kreeg zowel complimenten als opmerkingen, dus dat is fijn. Ik weet nu waar ik aan moet werken. Ze zeiden bijvoorbeeld dat ik soms te snel conclusies trek, en dat ik beter even rustig kan nadenken voordat ik iets ga coderen."
+          },
+          {
+            "date": "February 13",
+            "content": "Vandaag heb ik wat nieuwe endpoints gemaakt. Maar ja, weer die feedback: 'Denk logischer na!' en 'Gebruik de Drizzle endpoint styling, dat is veel efficiënter!'. Ik moest ook nog uitzoeken hoe ik mijn server files kon optimaliseren. Echt geen idee waar ze het over hadden, haha! Maar ik ben er wel uitgekomen uiteindelijk. Ik heb even gegoogeld en wat tutorials bekeken, en toen snapte ik het gelukkig."
+          },
+          {
+            "date": "February 14",
+            "content": "Ik ben nu aan het wachten op feedback over mijn andere PR's. Ik heb een paar tickets opgepakt, bijvoorbeeld eentje over het toevoegen van een nieuwe feature aan de user interface, en eentje over het verbeteren van de performance van de API. Ik heb de code al geschreven en ik heb er een PR voor aangemaakt, maar nu is het even wachten op de review van mijn collega's. Ik heb het gevoel dat ik een beetje langzaam werk, maar mijn collega's zeggen dat het wel goed is zo. Ik denk dat ik wel op de goede weg ben, maar dat werken met tickets en PR's is wel even wennen. Het is allemaal nieuw voor me. Zo'n PR is best spannend, want dan wordt je code door iemand anders nagekeken. Maar het is ook wel leerzaam, want je krijgt feedback en zo leer je weer nieuwe dingen."
+          }
+        ]
+      },
+      "week3": {
+        "title": "Week 3",
+        "overview": "Deze week ging het eindelijk beter! Ik heb wat vooruitgang geboekt en mijn werkstijl is verbeterd.",
+        "days": [
+          {
+            "date": "February 17",
+            "content": "Nog steeds een beetje frustrerend, want ik wacht op feedback over wat componenten. Maar ik heb wel aan een ander ticket voor AmoTrack kunnen werken."
+          },
+          {
+            "date": "February 18",
+            "content": "Er was wat verwarring over welke codeerstijl ik moest volgen. De ene senior wilde dat ik me focuste op schaalbaarheid en efficiëntie, de ander op kleine stapjes en zorgvuldigheid. Allebei goede keuzes, en ik heb van allebei veel geleerd."
+          },
+          {
+            "date": "February 19",
+            "content": "Yes, mijn beste dag tot nu toe! Feedback op mijn PR's was super positief. Normaal 50+ commentaren, nu maar 4 tot 10, en meestal typefoutjes. Ik voel me echt beter worden en nuttiger."
+          },
+          {
+            "date": "February 20",
+            "content": "Vandaag heb ik al mijn tickets van week 1 afgemaakt en goedgekeurd gekregen. En ik heb ook nog feedback gehad van mijn backend senior. Morgen ga ik de backend refactoren, denk ik."
+          }
+        ]
       }
     }
   },
