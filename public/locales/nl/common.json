@@ -178,6 +178,32 @@
             "content": "vandaag was zeer simple, moest me gewoon houden aan mijn persoonlijk project amo-track en verder werken aan de backend."
           }
         ]
+      },
+      "week4": {
+        "title": "Week 4",
+        "overview": "Deze week heb ik eindelijk een demo kunnen laten zien aan de seniors! Ik heb getoond hoe ik de frontend en backend van het amoTrack project heb gemaakt.",
+        "days": [
+          {
+            "date": "24 Februari",
+            "content": "Vandaag zag ik dat er nog belangrijke functies ontbraken in mijn formuliercomponenten, die ik meteen heb toegevoegd. Ook vond ik wat bugs in de backend die ik heb opgelost. Het was een goede dag zonder grote problemen."
+          },
+          {
+            "date": "25 Februari",
+            "content": "Ik zit een beetje vast met het formulier. Het werkt wel, maar ik moet breder denken - wat als mijn collega's het willen gebruiken met andere functies? Deze aanpak kost meer tijd, maar is beter voor iedereen op langere termijn."
+          },
+          {
+            "date": "26 Februari",
+            "content": "Vandaag weer eens aan de backend gewerkt, waar ik al een week niets aan had gedaan. We waren nog steeds vooral bezig met de frontend. Een rustige dag met gestage voortgang."
+          },
+          {
+            "date": "27 Februari",
+            "content": "Een drukke dag. Senior Manu gaf me complimenten over mijn werk, wat leuk was om te horen. Toch wil ik meer bereiken dan dit. Ook al ben ik nog nieuw, het frustreert me dat simpele taken zoveel tijd kosten. Ik ga na het werk extra studeren om beter te worden."
+          },
+          {
+            "date": "28 Februari",
+            "content": "Vandaag mijn demo laten zien aan het team. Ze vonden het goed, maar ikzelf ben niet helemaal tevreden - ik weet dat ik beter kan. Goed nieuws: ik ben gestopt met mijn weekendwerk in het magazijn. Nu kan ik meer tijd aan dit project besteden en mezelf verbeteren."
+          }
+        ]
       }
     }
   },

@@ -178,6 +178,32 @@
             "content": "Today I just kept working on the project and fixing bugs. continue working on the backend too! "
           }
         ]
+      },
+      "week4": {
+        "title": "Week 4",
+        "overview": "This week I finally presented a demo to my seniors showcasing how I implemented both frontend and backend for the amoTrack project.",
+        "days": [
+          {
+            "date": "February 24",
+            "content": "I noticed I hadn't added several features to the form components and implemented those today. I also discovered and fixed some bugs in the backend. Overall, it wasn't a particularly challenging day."
+          },
+          {
+            "date": "February 25",
+            "content": "I'm feeling a bit stuck with the form implementation. While I have a working version, I realize I need to think more generically - what if my colleagues need it with different features? This generic approach is challenging because it takes longer to implement."
+          },
+          {
+            "date": "February 26",
+            "content": "Today I focused on backend work, which I hadn't touched for about a week. Most of the day was still centered on frontend development, with nothing particularly notable to report."
+          },
+          {
+            "date": "February 27",
+            "content": "It was a stressful day. My senior Manu complimented me on my progress, but I feel I can aim higher. I understand I'm still new, but I'm frustrated at how long it takes me to complete what seem like basic tasks. I'll need to study extra hours at home after work."
+          },
+          {
+            "date": "February 28",
+            "content": "I presented my demo to the seniors today, and they said it was okay. I wasn't satisfied with my work - I know I could do much better. I've finally quit my weekend warehouse job, so let's see if I can dedicate more time to my project and raise the bar."
+          }
+        ]
       }
     }
   },
