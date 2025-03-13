@@ -204,6 +204,32 @@
             "content": "Vandaag mijn demo laten zien aan het team. Ze vonden het goed, maar ikzelf ben niet helemaal tevreden - ik weet dat ik beter kan. Goed nieuws: ik ben gestopt met mijn weekendwerk in het magazijn. Nu kan ik meer tijd aan dit project besteden en mezelf verbeteren."
           }
         ]
+      },
+      "week5": {
+        "title": "Week 5",
+        "overview": "placeholder heb problemen met vercel, update zal binnekort komen !!",
+        "days": [
+          {
+            "date": "24 Februari",
+            "content": "placeholder"
+          },
+          {
+            "date": "25 Februari",
+            "content": "placeholder"
+          },
+          {
+            "date": "26 Februari",
+            "content": "placeholder"
+          },
+          {
+            "date": "27 Februari",
+            "content": "placeholder"
+          },
+          {
+            "date": "28 Februari",
+            "content": "placeholder"
+          }
+        ]
       }
     }
   },
