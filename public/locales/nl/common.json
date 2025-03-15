@@ -205,29 +205,56 @@
           }
         ]
       },
+
       "week5": {
         "title": "Week 5",
-        "overview": "placeholder heb problemen met vercel, update zal binnekort komen !!",
+        "overview": "Een rustige week, waarin ik me vooral heb gefocust op pull requests (PR's) en de frontend van AmoTrack. Lekker productief, maar ook ruimte voor ontspanning!",
         "days": [
           {
-            "date": "24 Februari",
-            "content": "placeholder"
+            "date": "4 maart",
+            "content": "Aan de slag met PR's en de frontend van AmoTrack. Beetje sleutelen, beetje finetunen."
           },
           {
-            "date": "25 Februari",
-            "content": "placeholder"
+            "date": "5 februari",
+            "content": "Formulierupdates voor alle projecten, PR's afgehandeld en de backend van AmoTrack afgerond. Hoppa, weer een mijlpaal bereikt!"
           },
           {
-            "date": "26 Februari",
-            "content": "placeholder"
+            "date": "6 februari",
+            "content": "PR-voortgang geboekt, een klein Git-probleempje getackeld en de frontend verder uitgewerkt. Lekker bezig!"
           },
           {
-            "date": "27 Februari",
-            "content": "placeholder"
+            "date": "7 februari",
+            "content": "Even vastgezeten met GitHub en de Azure-server, maar toch een paar PR's kunnen doen en vooruitgang geboekt met het project. Ik had het gevoel dat ik nog beter had kunnen presteren, maar al bij al een productieve dag."
           },
           {
-            "date": "28 Februari",
-            "content": "placeholder"
+            "date": "8 februari",
+            "content": "Gestart met een klein zelfproject, genaamd 'Mini Mike'. Een instructieset van mijn senior om zijn code guide te volgen. Leerzaam en leuk!"
+          }
+        ]
+      },
+      "week6": {
+        "title": "Week 6",
+        "overview": "Deze week stond in het teken van Azure-uitdagingen, deployment-issues en de nodige portie frontend-werk. Een rollercoaster aan technische avonturen!",
+        "days": [
+          {
+            "date": "10 maart",
+            "content": "Frontend-updates doorgevoerd en me verdiept in 'chunk size reduction' bij GitHub Actions voor Azure. Geen idee wat het precies inhield, maar ik ben er vol ingedoken!"
+          },
+          {
+            "date": "11 februari",
+            "content": "Verder gewerkt aan tickets IAT-6 tot en met IAT-11 en het 'chunk size Azure-probleem' opgelost. Hopelijk maakt dit het werk van mijn senior Wimme een stuk makkelijker. Azure blijft een uitdaging, die documentatie is echt super saai."
+          },
+          {
+            "date": "12 februari",
+            "content": "PR-voortgang geboekt, een Git-probleempje getackeld en de frontend verder uitgewerkt. Samen met mijn collega Precious de hele dag bezig geweest om deployment-issues te fixen. Eigenlijk niet onze taak, maar we wilden de seniors niet storen en laten zien dat we initiatief nemen."
+          },
+          {
+            "date": "13 februari",
+            "content": "Veel tijd besteed aan het oplossen van deployment-issues, AmoStyle geüpdatet en de focus gelegd op de frontend van AmoTrack."
+          },
+          {
+            "date": "14 februari",
+            "content": "Weer aan de slag met AmoTrack en de Amo-styling-library. Ook de tijd genomen om feedback te geven op het project van mijn collega. Samenwerking is key!"
           }
         ]
       }

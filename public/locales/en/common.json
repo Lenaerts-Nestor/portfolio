@@ -204,6 +204,58 @@
             "content": "I presented my demo to the seniors today, and they said it was okay. I wasn't satisfied with my work - I know I could do much better. I've finally quit my weekend warehouse job, so let's see if I can dedicate more time to my project and raise the bar."
           }
         ]
+      },
+      "week5": {
+        "title": "Week 5",
+        "overview": "A relaxed week, focusing mainly on pull requests (PRs) and the AmoTrack frontend. Productive, yet still plenty of room for unwinding!",
+        "days": [
+          {
+            "date": "March 4th",
+            "content": "Working on PRs and the AmoTrack frontend. A bit of tweaking, a bit of fine-tuning."
+          },
+          {
+            "date": "February 5th",
+            "content": "Form updates for all projects, PRs handled, and the AmoTrack backend completed. Boom, another milestone achieved!"
+          },
+          {
+            "date": "February 6th",
+            "content": "Progress made on PRs, a minor Git issue tackled, and the frontend further developed. Keeping busy!"
+          },
+          {
+            "date": "February 7th",
+            "content": "Got a bit stuck with GitHub and the Azure server, but still managed to do a few PRs and make progress on the project. Felt like I could have done better, but overall a productive day."
+          },
+          {
+            "date": "February 8th",
+            "content": "Started a small personal project called 'Mini Mike'. An instruction set from my senior to follow his code guide. Educational and fun!"
+          }
+        ]
+      },
+      "week6": {
+        "title": "Week 6",
+        "overview": "This week was all about Azure challenges, deployment issues, and a good dose of frontend work. A rollercoaster of technical adventures!",
+        "days": [
+          {
+            "date": "March 10th",
+            "content": "Frontend updates implemented and delved into 'chunk size reduction' in GitHub Actions for Azure. Had no clue what it meant, but I dove right in!"
+          },
+          {
+            "date": "February 11th",
+            "content": "Continued working on tickets IAT-6 through IAT-11 and resolved the 'chunk size Azure issue'. Hopefully, this makes my senior Wimme's work much easier. Azure remains a challenge, that documentation is super boring."
+          },
+          {
+            "date": "February 12th",
+            "content": "Progress made on PRs, a Git issue tackled, and the frontend further developed. My colleague Precious and I also spent the whole day fixing deployment issues. Not really our job, but we decided to do it to avoid bothering the seniors and show initiative."
+          },
+          {
+            "date": "February 13th",
+            "content": "Spent time trying to fix deployment issues, updated AmoStyle, and focused on the AmoTrack frontend."
+          },
+          {
+            "date": "February 14th",
+            "content": "Back to work on AmoTrack and the Amo-styling-library. Also took the time to provide feedback on my colleague's project. Teamwork is key!"
+          }
+        ]
       }
     }
   },
