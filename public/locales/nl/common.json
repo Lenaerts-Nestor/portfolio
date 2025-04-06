@@ -257,6 +257,64 @@
             "content": "Weer aan de slag met AmoTrack en de Amo-styling-library. Ook de tijd genomen om feedback te geven op het project van mijn collega. Samenwerking is key!"
           }
         ]
+      },
+      "week7": {
+        "title": "Week 7",
+        "overview": "deze week was gewoon full amo-style-library. mijn senior hadden besloten om gewoon de componenten te laten herschrijven maar zonder de mui te gebruiken",
+        "days": [
+          {
+            "date": "17 maart",
+            "content": "Vandaag was een rustige dag. Ik heb wat tijd besteed aan het herschrijven van de componenten in de Amo-style-library. Het was een beetje repetitief, maar ik heb het goed gedaan."
+          },
+          {
+            "date": "18 februari",
+            "content": "Ik heb vandaag verder gewerkt aan de Amo-style-library. Het is een beetje saai werk, maar ik weet dat het belangrijk is voor het project."
+          },
+          {
+            "date": "19 februari",
+            "content": "Vandaag heb ik wat tijd besteed aan het testen van de nieuwe componenten in de Amo-style-library. Het lijkt goed te werken tot nu toe."
+          },
+          {
+            "date": "20 februari",
+            "content": "vandaag was gewoon een herhaling van testen van de componenten in de amo-style-libary."
+          },
+          {
+            "date": "21 februari",
+            "content": "vandaag is gewoon een vervolging van gisteren. niks speciaals gebeurde."
+          }
+        ]
+      },
+      "week8": {
+        "title": "Week 8",
+        "overview": "deze week was rustig, had feedback gekregeven van mijn tussentijds evaluatie. aangezien dat het een herhaling was van vorige week, zal ik het gewoon in 2 dagen uitleggen",
+        "days": [
+          {
+            "date": "24 - 26 maart",
+            "content": "ik moest de frontend herbekijken van mijn senior mike aangezien er was code die niet correct was geschreven en ik moest zelfstandig sommige bugs fixen"
+          },
+          {
+            "date": "27 - 28 februari",
+            "content": "inputfields , radiofield, checkboxfield gemaakt. deze twee dagen hele tijd feedback en documentaties moeten bekijken volgens mijn senior."
+          }
+        ]
+      },
+      "week9": {
+        "title": "Week 9",
+        "overview": "deze week mocht ik eindelijk terug de FE en BE gaan werken. ben blij dermee",
+        "days": [
+          {
+            "date": "31 maart",
+            "content": "vandaag verder wachten op feedback van amo style lib."
+          },
+          {
+            "date": "1 april",
+            "content": "zelfde zoals gisteren."
+          },
+          {
+            "date": "2 - 4 april",
+            "content": "vandaag had mijn senior gezegd dat ik terug mocht aan de FE en BE van amotrack. heb tickets gekregeven van mijn senior manu en opvolging insturcites gekregen. heb de swagger direct gemaakt en alle soort updates gedaan in frontend. ik zal nu snel werken zodat de timesheet zo snel mogelijk af is ."
+          }
+        ]
       }
     }
   },
