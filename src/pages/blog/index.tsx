@@ -40,7 +40,6 @@ const Modal = ({
   );
 };
 
-// Add this to your global CSS file or as a style tag in your _app.tsx
 const GlobalStyle = () => (
   <style jsx global>{`
     .no-scrollbar::-webkit-scrollbar {
@@ -59,7 +58,6 @@ const BlogPage = () => {
 
   const { t } = useTranslation('common');
 
-  // Get updates from translations
   const updates = t(`blog.dailyUpdates.week${selectedWeek}.days`, {
     returnObjects: true,
   }) as Array<{ date: string; content: string }>;
@@ -86,7 +84,7 @@ const BlogPage = () => {
 
         {/* Blog Posts Grid */}
         <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((weekNumber) => (
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((weekNumber) => (
             <div
               key={weekNumber}
               onClick={() => {

@@ -315,6 +315,57 @@
             "content": "vandaag had mijn senior gezegd dat ik terug mocht aan de FE en BE van amotrack. heb tickets gekregeven van mijn senior manu en opvolging insturcites gekregen. heb de swagger direct gemaakt en alle soort updates gedaan in frontend. ik zal nu snel werken zodat de timesheet zo snel mogelijk af is ."
           }
         ]
+      },
+
+      "week10": {
+        "title": "Week 10",
+        "overview": "Een energieke week waarin ik de switch maakte van de Amo-Style-Library naar volle focus op AmoTrack, zowel frontend als backend. Veel progressie geboekt en nieuwe uitdagingen aangepakt!",
+        "days": [
+          {
+            "date": "7 - 11 April",
+            "content": "De week begon goed met de afronding van taken voor de Amo-Style-Library gedurende de eerste twee dagen. Vanaf woensdag kwam het goede nieuws: terug aan de slag met AmoTrack! Na een gesprek met Manu over de verwachtingen, dook ik vol enthousiasme in de 8 tickets die klaarlagen. Aan de frontend heb ik alle componenten van de Amo-Style-Library geüpdatet, bugs aangepakt, en de vertalingsfeedback van Mike en Nicolas verwerkt, naast algemene bugfixes. Voor de backend heb ik de Swagger-documentatie opgezet en ben ik gestart met het uitdenken van de logica voor soft deletion. Een productieve week met een positief gevoel (7/10)!"
+          }
+        ]
+      },
+      "week11": {
+        "title": "Week 11",
+        "overview": "Focus op het afronden van tickets en de timesheet-logica, met een blik op de komende demo en nieuwe uitdagingen.",
+        "days": [
+          {
+            "date": "14 - 18 April",
+            "content": "Deze week stond volledig in het teken van de lopende tickets voor AmoTrack. Ik heb me hier vol op gestort en heb ze bijna allemaal kunnen afronden! Een grote mijlpaal was het implementeren van de volledige timesheet-logica. Ondanks een druk weekend met magazijnwerk, voelde ik me over het algemeen positief (6/10) over de progressie. Mijn doelen voor volgende week zijn helder: feedback verzamelen op AmoTrack, de timesheet-functionaliteit grondig testen na de demo, en hopelijk alweer aan de slag met een nieuwe reeks tickets!"
+          }
+        ]
+      },
+      "week12": {
+        "title": "Week 12",
+        "overview": "Een productieve week met focus op het verwerken van design feedback en het voorbereiden van de gateway implementatie.",
+        "days": [
+          {
+            "date": "21 - 25 April",
+            "content": "Deze week heb ik me volledig gericht op de toegewezen tickets. Een belangrijk onderdeel was het herbouwen van een aantal pagina's op basis van nieuwe design feedback, wat zorgde voor een strakker en gebruiksvriendelijker resultaat. Over het algemeen een positieve week (7/10)! Voor volgende week staan er spannende dingen op de planning: de implementatie van de gateway voor AmoTrack en het afronden van de laatste tickets om AmoTrack helemaal compleet te maken."
+          }
+        ]
+      },
+      "week13": {
+        "title": "Week 13",
+        "overview": "Een week vol afronding en verfijning, met belangrijke stappen in de timesheet, login en vertalingen.",
+        "days": [
+          {
+            "date": "28 April - 2 Mei",
+            "content": "Deze week stond in het teken van de details en het afronden van cruciale onderdelen. Ik heb een aantal redesigns doorgevoerd op basis van waardevolle feedback. Een grote stap was het volledig afmaken van de timesheet, inclusief de correcte creatie en weergave van data. Daarnaast heb ik een deel van de login-functionaliteit geïmplementeerd en getest. Ook heb ik, op basis van feedback en volgens de juiste structuur, alle pagina's naar het Engels vertaald. Een productieve week met een goed gevoel (7/10)! Vooruitkijkend naar volgende week: de volledige registratie- en login-flow bekijken en hopelijk implementeren, de laatste design feedback voor AmoTrack ontvangen en de verwachtingen afstemmen, en een review krijgen op mijn frontend- en backend-documentatie."
+          }
+        ]
+      },
+      "week14": {
+        "title": "Week 14",
+        "overview": "Een week van verdieping en optimalisatie, met focus op React Query, role checks en het verfijnen van bestaande features.",
+        "days": [
+          {
+            "date": "5 - 9 Mei",
+            "content": "Deze week heb ik mijn weekenden goed besteed aan zelfstudie over React Query en de implementatie ervan in AmoTrack. Daarnaast heb ik onderzoek gedaan naar testscenario's en mogelijke optimalisaties voor zowel AmoDrive als AmoTrack. Binnen AmoTrack zelf heb ik oude code opgeschoond, role checks voor de sidebar geïmplementeerd en ben ik verder gegaan met de login-functionaliteit en het toepassen van React Query voor individueel ingelogde gebruikers. Ook heb ik de creatie van timesheets geüpdatet op basis van feedback, de project-details box gestyled en de rollen verder verfijnd. Een week vol technische vooruitgang!"
+          }
+        ]
       }
     }
   },

@@ -29,23 +29,28 @@
     "educationDescription": "My formal education in information technology.",
     "positions": {
       "ictConsultant": "ICT Consultant",
-      "ictSupport": "ICT Support Specialist"
+      "ictSupport": "ICT Support Specialist",
+      "fullStackDev": "Full-Stack Developer"
     },
     "companies": {
       "beego": "Beego",
-      "digipolis": "Digipolis"
+      "digipolis": "Digipolis",
+      "amotek": "Amotek"
     },
     "experienceDates": {
       "beego": "Oct 2023 - May 2024",
-      "digipolis": "Aug 2024 - Sep 2024"
+      "digipolis": "Aug 2024 - Sep 2024",
+      "amotek": "Feb 2024 - Jun 2024"
     },
     "locations": {
       "remote": "Remote · Temporary Contract",
-      "antwerp": "Antwerpen, Belgium · Temporary Contract"
+      "antwerp": "Antwerpen, Belgium · Temporary Contract",
+      "hybrid": "Hybrid · Temporary Contract/internship"
     },
     "experienceDescriptions": {
       "beego": "I helped clients with basic tech issues at their homes or businesses, such as fixing computers and explaining how to stay safe online.",
-      "digipolis": "I learned the basics of ICT support by setting up computers and assisting with network setups. It was a great way to see how things work outside of programming."
+      "digipolis": "I learned the basics of ICT support by setting up computers and assisting with network setups. It was a great way to see how things work outside of programming.",
+      "amotek": "I’m worked on a project called AmoTrack, where I’m learning to build a full-stack application using React, PostgreSQL, and Fastify. I’m focusing on both frontend and backend development."
     },
     "education": {
       "degree": "Graduaat, Information Technology",
@@ -254,6 +259,114 @@
           {
             "date": "February 14th",
             "content": "Back to work on AmoTrack and the Amo-styling-library. Also took the time to provide feedback on my colleague's project. Teamwork is key!"
+          }
+        ]
+      },
+      "week7": {
+        "title": "Week 7",
+        "overview": "This week was all about the Amo-Style-Library. My seniors decided to have the components rewritten, but without using MUI.",
+        "days": [
+          {
+            "date": "March 17",
+            "content": "Today was a quiet day. I spent some time rewriting components in the Amo-Style-Library. It was a bit repetitive, but I did it well."
+          },
+          {
+            "date": "March 18",
+            "content": "I continued working on the Amo-Style-Library today. It's a bit tedious, but I know it's important for the project."
+          },
+          {
+            "date": "March 19",
+            "content": "Today I spent some time testing the new components in the Amo-Style-Library. It seems to be working well so far."
+          },
+          {
+            "date": "March 20",
+            "content": "Today was just a repeat of testing the components in the Amo-Style-Library."
+          },
+          {
+            "date": "March 21",
+            "content": "Today was just a continuation of yesterday. Nothing special happened."
+          }
+        ]
+      },
+      "week8": {
+        "title": "Week 8",
+        "overview": "This week was calm; I received feedback from my mid-term evaluation. Since it was largely a repeat of last week, I'll summarize it in two entries.",
+        "days": [
+          {
+            "date": "March 24 - 26",
+            "content": "I had to review the frontend with my senior Mike as some code was written incorrectly, and I had to independently fix some bugs."
+          },
+          {
+            "date": "March 27 - 28",
+            "content": "Created input fields, radio fields, and checkbox fields. These two days, I constantly had to review feedback and documentation according to my senior."
+          }
+        ]
+      },
+      "week9": {
+        "title": "Week 9",
+        "overview": "This week I finally got to work on the FE and BE again. I'm happy about that.",
+        "days": [
+          {
+            "date": "March 31",
+            "content": "Today, continued waiting for feedback on the Amo Style Lib."
+          },
+          {
+            "date": "April 1",
+            "content": "Same as yesterday."
+          },
+          {
+            "date": "April 2 - 4",
+            "content": "Today my senior said I could go back to working on the FE and BE of AmoTrack. I received tickets from my senior Manu and follow-up instructions. I immediately created the Swagger and made all sorts of updates in the frontend. I will work quickly now so the timesheet can be finished as soon as possible."
+          }
+        ]
+      },
+      "week10": {
+        "title": "Week 10",
+        "overview": "An energetic week where I switched from the Amo-Style-Library to full focus on AmoTrack, both frontend and backend. Made a lot of progress and tackled new challenges!",
+        "days": [
+          {
+            "date": "April 7 - 11",
+            "content": "The week started well with wrapping up tasks for the Amo-Style-Library during the first two days. From Wednesday, the good news came: back to work on AmoTrack! After a discussion with Manu about expectations, I enthusiastically dived into the 8 tickets that were ready. On the frontend, I updated all Amo-Style-Library components, addressed bugs, and implemented translation feedback from Mike and Nicolas, alongside general bug fixes. For the backend, I set up Swagger documentation and started conceptualizing the logic for soft deletion. A productive week with a positive feeling (7/10)!"
+          }
+        ]
+      },
+      "week11": {
+        "title": "Week 11",
+        "overview": "Focus on finalizing tickets and the timesheet logic, with an eye on the upcoming demo and new challenges.",
+        "days": [
+          {
+            "date": "April 14 - 18",
+            "content": "This week was entirely dedicated to the ongoing tickets for AmoTrack. I fully immersed myself in them and managed to complete almost all of them! A major milestone was implementing the entire timesheet logic. Despite a busy weekend with warehouse work, I generally felt positive (6/10) about the progress. My goals for next week are clear: gather feedback on AmoTrack, thoroughly test the timesheet functionality after the demo, and hopefully get started on a new set of tickets!"
+          }
+        ]
+      },
+      "week12": {
+        "title": "Week 12",
+        "overview": "A productive week focusing on processing design feedback and preparing for the gateway implementation.",
+        "days": [
+          {
+            "date": "April 21 - 25",
+            "content": "This week, I fully focused on the assigned tickets. An important part was rebuilding several pages based on new design feedback, resulting in a cleaner and more user-friendly outcome. Overall, a positive week (7/10)! Exciting things are planned for next week: implementing the gateway for AmoTrack and finalizing the last tickets to complete AmoTrack entirely."
+          }
+        ]
+      },
+      "week13": {
+        "title": "Week 13",
+        "overview": "A week full of finalization and refinement, with significant steps in timesheets, login, and translations.",
+        "days": [
+          {
+            "date": "April 28 - May 2",
+            "content": "This week was all about details and finalizing crucial components. I implemented several redesigns based on valuable feedback. A major step was completing the timesheet, including correct data creation and display. Additionally, I implemented and tested part of the login functionality. Also, based on feedback and following the correct structure, I translated all pages into English. A productive week with a good feeling (7/10)! Looking ahead to next week: review and hopefully implement the full registration and login flow, receive the latest design feedback for AmoTrack and align expectations, and get a review of my frontend and backend documentation."
+          }
+        ]
+      },
+      "week14": {
+        "title": "Week 14",
+        "overview": "A week of deepening knowledge and optimization, focusing on React Query, role checks, and refining existing features.",
+        "days": [
+          {
+            "date": "May 5 - 9",
+            "content": "This week, I spent my weekends well on self-study about React Query and its implementation in AmoTrack. Additionally, I researched test scenarios and potential optimizations for both AmoDrive and AmoTrack. Within AmoTrack itself, I cleaned up old code, implemented role checks for the sidebar, and continued with the login functionality and applying React Query for individually logged-in users. I also updated the timesheet creation based on feedback, styled the project-details box, and further refined roles. A week full of technical progress!"
           }
         ]
       }
