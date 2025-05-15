@@ -11,6 +11,22 @@ import Card from '@/components/cards/Card';
 import ExperienceCard from '@/components/cards/ExperienceCard';
 import Badge from '@/components/Badge';
 import HeroSection from '@/components/section/HeroSection';
+import {
+  Container,
+  SectionDescription,
+  SkillsGrid,
+  SkillText,
+  ProjectGrid,
+  ExperienceSection,
+  EducationSection,
+  EducationHeader,
+  EducationTitle,
+  EducationSchool,
+  EducationDuration,
+  EducationContent,
+  EducationCourseText,
+  BadgeContainer,
+} from './index.styled';
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -22,7 +38,7 @@ export default function Home() {
         <meta name='description' content={t('home.description')} />
       </Head>
 
-      <div className='max-w-6xl mx-auto px-4'>
+      <Container>
         <HeroSection
           title={t('home.welcome')}
           description={t('home.description').replace("'", '&apos;')}
@@ -32,18 +48,16 @@ export default function Home() {
 
         {/* Technologies Section */}
         <Section title={t('home.technologies')}>
-          <p className='text-center text-slate-600 mb-8 max-w-2xl mx-auto'>
-            {t('home.techDescription')}
-          </p>
+          <SectionDescription>{t('home.techDescription')}</SectionDescription>
           <TechGrid technologies={techStack} className='mb-8' />
         </Section>
 
         {/* Projects Section */}
         <Section title={t('home.projects')}>
-          <p className='text-center text-slate-600 mb-8 max-w-2xl mx-auto'>
+          <SectionDescription>
             {t('home.projectsDescription')}
-          </p>
-          <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
+          </SectionDescription>
+          <ProjectGrid>
             {projects.map((project) => (
               <TechCard
                 key={project.title}
@@ -51,15 +65,15 @@ export default function Home() {
                 className='border border-slate-300'
               />
             ))}
-          </section>
+          </ProjectGrid>
         </Section>
 
         {/* Experience Section */}
         <Section title={t('home.experienceTitle')}>
-          <section className='space-y-6 mb-8 max-w-3xl mx-auto'>
-            <p className='text-center text-slate-600 mb-8 max-w-2xl mx-auto'>
+          <ExperienceSection>
+            <SectionDescription>
               {t('home.experienceDescription')}
-            </p>
+            </SectionDescription>
             <ExperienceCard
               title={t('home.positions.fullStackDev')}
               company={t('home.companies.amotek')}
@@ -81,63 +95,58 @@ export default function Home() {
               location={t('home.locations.antwerp')}
               description={t('home.experienceDescriptions.digipolis')}
             />
-          </section>
+          </ExperienceSection>
         </Section>
 
         {/* Core Skills Section */}
         <Section title={t('home.coreSkillsTitle')}>
-          <section className='mb-8 max-w-3xl mx-auto'>
-            <p className='text-center text-slate-600 mb-8 max-w-2xl mx-auto'>
+          <EducationSection>
+            <SectionDescription>
               {t('home.skillsDescription')}
-            </p>
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+            </SectionDescription>
+            <SkillsGrid>
               {(t('home.skills', { returnObjects: true }) as string[]).map(
                 (skill) => (
-                  <Card
-                    key={skill}
-                    className='text-center flex items-center justify-center min-h-[120px] md:min-h-[100px]'
-                  >
-                    <span className='text-indigo-600 font-medium text-sm md:text-base break-words'>
-                      {skill}
-                    </span>
+                  <Card key={skill}>
+                    <SkillText>{skill}</SkillText>
                   </Card>
                 )
               )}
-            </div>
-          </section>
+            </SkillsGrid>
+          </EducationSection>
         </Section>
 
         {/* Education Section */}
         <Section title={t('home.educationTitle')}>
-          <p className='text-center text-slate-600 mb-8 max-w-2xl mx-auto'>
+          <SectionDescription>
             {t('home.educationDescription')}
-          </p>
-          <section className='mb-8 max-w-3xl mx-auto'>
-            <Card className='hover:shadow-md transition-shadow border border-slate-300'>
-              <div className='flex justify-between items-start'>
+          </SectionDescription>
+          <EducationSection>
+            <Card>
+              <EducationHeader>
                 <div>
-                  <h3 className='text-xl font-semibold text-slate-800'>
-                    {t('home.education.degree')}
-                  </h3>
-                  <p className='text-indigo-600 font-medium'>
+                  <EducationTitle>{t('home.education.degree')}</EducationTitle>
+                  <EducationSchool>
                     {t('home.education.school')}
-                  </p>
+                  </EducationSchool>
                 </div>
-                <span className='text-sm text-slate-500'>
+                <EducationDuration>
                   {t('home.education.duration')}
-                </span>
-              </div>
-              <div className='mt-4'>
-                <p className='text-slate-600'>{t('home.education.courses')}</p>
-                <div className='flex flex-wrap gap-2 mt-2'>
+                </EducationDuration>
+              </EducationHeader>
+              <EducationContent>
+                <EducationCourseText>
+                  {t('home.education.courses')}
+                </EducationCourseText>
+                <BadgeContainer>
                   <Badge text={t('home.education.courseList.web')} />
                   <Badge text={t('home.education.courseList.systems')} />
-                </div>
-              </div>
+                </BadgeContainer>
+              </EducationContent>
             </Card>
-          </section>
+          </EducationSection>
         </Section>
-      </div>
+      </Container>
     </>
   );
 }

@@ -1,14 +1,19 @@
 // src/pages/_app.tsx
 import type { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
+import { ThemeProvider } from 'styled-components';
 import Layout from '@/components/layout/Layout';
-import '@/styles/globals.css';
+import theme from '@/styles/theme';
+import { GlobalStyle } from '../styles/GlobalStyle';
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   );
 }
 

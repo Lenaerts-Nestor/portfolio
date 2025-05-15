@@ -1,143 +1,160 @@
 // src/components/layout/Header.tsx
-import Link from "next/link";
-import { useState } from "react";
-import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
-import { Menu, X, Github, Linkedin } from "lucide-react";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import Link from 'next/link';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+import {
+  HeaderContainer,
+  Nav,
+  NavContent,
+  Logo,
+  DesktopNav,
+  NavLink,
+  SocialIcons,
+  SocialLink,
+  MobileMenuButton,
+  MobileMenu,
+  MobileNavLinks,
+  MobileNavLink,
+  MobileMenuFooter,
+  RightSectionDesktop,
+} from './Header.styled';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { t } = useTranslation("common");
+  const { t } = useTranslation('common');
   const router = useRouter();
 
   const isActive = (pathname: string) => router.pathname === pathname;
 
   return (
-    <header className="bg-white border-b border-slate-300 shadow-sm sticky top-0 z-50">
-      <nav className="container mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          <Link
-            href="/"
-            className="font-bold text-3xl md:text-2xl bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent hover:opacity-90 transition-opacity"
-          >
-            Lenaerts
+    <HeaderContainer>
+      <Nav>
+        <NavContent>
+          <Link href='/' passHref legacyBehavior>
+            <Logo>Lenaerts</Logo>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/"
-              className={`px-3 py-2 text-sm font-medium ${isActive("/")
-                  ? "text-indigo-600 border-b-2 border-indigo-600"
-                  : "text-slate-700 hover:text-indigo-600"
-                } transition-colors`}
-            >
-              {t("navigation.home")}
+          <DesktopNav>
+            <Link href='/' passHref legacyBehavior>
+              <NavLink $active={isActive('/')}>{t('navigation.home')}</NavLink>
             </Link>
 
-            <Link
-              href="/about"
-              className={`px-3 py-2 text-sm font-medium ${isActive("/about")
-                  ? "text-indigo-600 border-b-2 border-indigo-600"
-                  : "text-slate-700 hover:text-indigo-600"
-                } transition-colors`}
-            >
-              {t("navigation.about")}
+            <Link href='/about' passHref legacyBehavior>
+              <NavLink $active={isActive('/about')}>
+                {t('navigation.about')}
+              </NavLink>
             </Link>
 
-            <Link
-              href="/blog"
-              className={`px-3 py-2 text-sm font-medium ${isActive("/blog")
-                  ? "text-indigo-600 border-b-2 border-indigo-600"
-                  : "text-slate-700 hover:text-indigo-600"
-                } transition-colors`}
-            >
-              {t("navigation.blog")}
+            <Link href='/blog' passHref legacyBehavior>
+              <NavLink $active={isActive('/blog')}>
+                {t('navigation.blog')}
+              </NavLink>
             </Link>
 
-            <div className="pl-4 border-l border-slate-200">
+            <Link href='/documentation' passHref legacyBehavior>
+              <NavLink $active={isActive('/documentation')}>
+                {t('navigation.documentation')}
+              </NavLink>
+            </Link>
+
+            <RightSectionDesktop>
+              <SocialIcons>
+                <SocialLink
+                  href='https://github.com/yourusername'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='GitHub'
+                >
+                  <Github size={20} />
+                </SocialLink>
+                <SocialLink
+                  href='https://www.linkedin.com/in/yourprofile'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  aria-label='LinkedIn'
+                >
+                  <Linkedin size={20} />
+                </SocialLink>
+              </SocialIcons>
+
               <LanguageSwitcher />
-            </div>
-          </div>
+            </RightSectionDesktop>
+          </DesktopNav>
 
-          {/* Mobile Menu Button and Language Switcher */}
-          <div className="flex items-center space-x-4 md:hidden">
-            <LanguageSwitcher />
-            <button
-              className="p-2 rounded-lg hover:bg-slate-100 transition-colors text-slate-700"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? (
-                <X size={24} className="animate-spin-in" />
-              ) : (
-                <Menu size={24} className="animate-spin-in" />
-              )}
-            </button>
-          </div>
-        </div>
+          {/* Mobile Menu Button */}
+          <MobileMenuButton onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </MobileMenuButton>
+        </NavContent>
+      </Nav>
 
-        {/* Mobile Navigation */}
-        <div
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? "max-h-96" : "max-h-0"
-            }`}
-        >
-          <div className="py-4 space-y-4 border-t border-slate-300 text-center">
-            <Link
-              href="/"
-              className={`block px-4 py-3 text-base ${isActive("/")
-                  ? "text-indigo-600 bg-indigo-50 rounded-lg font-semibold"
-                  : "text-slate-700 hover:bg-slate-50"
-                } transition-colors`}
+      {/* Mobile Menu */}
+      <MobileMenu isOpen={isMenuOpen}>
+        <MobileNavLinks>
+          <Link href='/' passHref legacyBehavior>
+            <MobileNavLink
+              active={isActive('/')}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t("navigation.home")}
-            </Link>
+              {t('navigation.home')}
+            </MobileNavLink>
+          </Link>
 
-            <Link
-              href="/about"
-              className={`block px-4 py-3 text-base ${isActive("/about")
-                  ? "text-indigo-600 bg-indigo-50 rounded-lg font-semibold"
-                  : "text-slate-700 hover:bg-slate-50"
-                } transition-colors`}
+          <Link href='/about' passHref legacyBehavior>
+            <MobileNavLink
+              active={isActive('/about')}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t("navigation.about")}
-            </Link>
+              {t('navigation.about')}
+            </MobileNavLink>
+          </Link>
 
-            <Link
-              href="/blog"
-              className={`block px-4 py-3 text-base ${isActive("/blog")
-                  ? "text-indigo-600 bg-indigo-50 rounded-lg font-semibold"
-                  : "text-slate-700 hover:bg-slate-50"
-                } transition-colors`}
+          <Link href='/blog' passHref legacyBehavior>
+            <MobileNavLink
+              active={isActive('/blog')}
               onClick={() => setIsMenuOpen(false)}
             >
-              {t("navigation.blog")}
-            </Link>
+              {t('navigation.blog')}
+            </MobileNavLink>
+          </Link>
 
-            <div className="flex justify-center space-x-8 pt-6 px-8 border-t border-slate-200">
-              <Link
-                href="https://github.com/Lenaerts-Nestor"
-                target="_blank"
-                className="hover:opacity-80 transition-opacity"
-                aria-label="GitHub"
-              >
-                <Github size={24} style={{ color: "#181717" }} />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/nestor-lenaerts-4652381b9/"
-                target="_blank"
-                className="hover:opacity-80 transition-opacity"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={24} style={{ color: "#0A66C2" }} />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+          <Link href='/documentation' passHref legacyBehavior>
+            <MobileNavLink
+              active={isActive('/documentation')}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t('navigation.documentation')}
+            </MobileNavLink>
+          </Link>
+        </MobileNavLinks>
+
+        <MobileMenuFooter>
+          <SocialIcons>
+            <SocialLink
+              href='https://github.com/yourusername'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='GitHub'
+            >
+              <Github size={20} />
+            </SocialLink>
+            <SocialLink
+              href='https://www.linkedin.com/in/yourprofile'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='LinkedIn'
+            >
+              <Linkedin size={20} />
+            </SocialLink>
+          </SocialIcons>
+
+          <LanguageSwitcher />
+        </MobileMenuFooter>
+      </MobileMenu>
+    </HeaderContainer>
   );
 }

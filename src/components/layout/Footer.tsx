@@ -1,97 +1,95 @@
 // src/components/layout/Footer.tsx
-import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import Link from 'next/link';
+import { Github, Linkedin } from 'lucide-react';
+import {
+  FooterContainer,
+  FooterContent,
+  FooterGrid,
+  FooterSection,
+  FooterHeading,
+  FooterText,
+  FooterLinksList,
+  FooterLinkItem,
+  FooterLink,
+  SocialLinksContainer,
+  SocialLink,
+  Copyright,
+} from './Footer.styled';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <FooterContainer>
+      <FooterContent>
+        <FooterGrid>
           {/* About Section */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">About</h3>
-            <p className="text-gray-400 leading-relaxed">
+          <FooterSection>
+            <FooterHeading>About</FooterHeading>
+            <FooterText>
               Documenting my internship journey at [Company Name] as part of the
               AP Hogeschool Programming program.
-            </p>
-          </div>
+            </FooterText>
+          </FooterSection>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">
-              Quick Links
-            </h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 hover:text-blue-400 transition-colors"
-                >
-                  Home
+          <FooterSection>
+            <FooterHeading>Quick Links</FooterHeading>
+            <FooterLinksList>
+              <FooterLinkItem>
+                <Link href='/' passHref legacyBehavior>
+                  <FooterLink>Home</FooterLink>
                 </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-400 hover:text-blue-400 transition-colors"
-                >
-                  About
+              </FooterLinkItem>
+              <FooterLinkItem>
+                <Link href='/about' passHref legacyBehavior>
+                  <FooterLink>About</FooterLink>
                 </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="text-gray-400 hover:text-blue-400 transition-colors"
-                >
-                  Blog
+              </FooterLinkItem>
+              <FooterLinkItem>
+                <Link href='/blog' passHref legacyBehavior>
+                  <FooterLink>Blog</FooterLink>
                 </Link>
-              </li>
-              <li>
-                <Link
-                  href="/documentation"
-                  className="text-gray-400 hover:text-blue-400 transition-colors"
-                >
-                  Documentation
+              </FooterLinkItem>
+              <FooterLinkItem>
+                <Link href='/documentation' passHref legacyBehavior>
+                  <FooterLink>Documentation</FooterLink>
                 </Link>
-              </li>
-            </ul>
-          </div>
+              </FooterLinkItem>
+            </FooterLinksList>
+          </FooterSection>
 
-          {/* Connect Section */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Connect</h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.linkedin.com/in/nestor-lenaerts-4652381b9/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition-colors"
-                aria-label="LinkedIn"
+          {/* Contact Section */}
+          <FooterSection>
+            <FooterHeading>Connect</FooterHeading>
+            <FooterText>
+              Follow me on social media or reach out directly.
+            </FooterText>
+            <SocialLinksContainer>
+              <SocialLink
+                href='https://github.com/yourusername'
+                target='_blank'
+                rel='noopener noreferrer'
+                aria-label='GitHub'
               >
-                <Linkedin size={24} />
-              </a>
-              <a
-                href="https://github.com/Lenaerts-Nestor"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition-colors"
-                aria-label="GitHub"
+                <Github size={20} />
+              </SocialLink>
+              <SocialLink
+                href='https://www.linkedin.com/in/yourprofile'
+                target='_blank'
+                rel='noopener noreferrer'
+                aria-label='LinkedIn'
               >
-                <Github size={24} />
-              </a>
-            </div>
-          </div>
-        </div>
+                <Linkedin size={20} />
+              </SocialLink>
+            </SocialLinksContainer>
+          </FooterSection>
+        </FooterGrid>
 
-        {/* Copyright */}
-        <div className="mt-8 pt-8 border-t border-gray-800">
-          <p className="text-center text-sm text-gray-500">
-            © {currentYear} Portfolio WPL. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
+        <Copyright>
+          © {currentYear} WPL Portfolio. All rights reserved.
+        </Copyright>
+      </FooterContent>
+    </FooterContainer>
   );
 }

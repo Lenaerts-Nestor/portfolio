@@ -5,6 +5,32 @@ import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import { GlobalStyleIndex } from '@/utils/utils';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  max-width: 72rem; /* max-w-6xl */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+`;
+
+const HeroSection = styled.section`
+  text-align: center;
+  padding: 1rem 0; /* pt-4 pb-8 approximated */
+`;
+
+const Grid = styled.section`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
 
 const Modal = ({
   isOpen,
@@ -58,9 +84,9 @@ const BlogPage = () => {
         <meta name='description' content={t('blog.description')} />
       </Head>
 
-      <div className='max-w-6xl mx-auto px-4'>
+      <Container>
         {/* Hero Section */}
-        <section className='text-center pt-4 pb-8'>
+        <HeroSection>
           <div className='max-w-4xl mx-auto'>
             <h1 className='text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent leading-[1.4] tracking-normal py-1'>
               {t('blog.title')}
@@ -69,10 +95,10 @@ const BlogPage = () => {
               {t('blog.description')}
             </p>
           </div>
-        </section>
+        </HeroSection>
 
         {/* Blog Posts Grid */}
-        <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8'>
+        <Grid>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map((weekNumber) => (
             <div
               key={weekNumber}
@@ -101,7 +127,7 @@ const BlogPage = () => {
               </div>
             </div>
           ))}
-        </section>
+        </Grid>
 
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
           <div className='p-6'>
@@ -122,7 +148,7 @@ const BlogPage = () => {
             </div>
           </div>
         </Modal>
-      </div>
+      </Container>
     </>
   );
 };
