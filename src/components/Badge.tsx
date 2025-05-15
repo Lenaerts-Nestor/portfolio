@@ -1,13 +1,8 @@
-interface BadgeProps {
-    text: string;
-}
+import { BadgeProps } from '@/interfaces/interface';
+import { FC } from 'react';
 
-const Badge: React.FC<BadgeProps> = ({ text }) => {
-    return (
-        <div className="badge">
-            {text}
-        </div>
-    );
+const Badge: FC<BadgeProps> = ({ text }) => {
+  return <div className='badge'>{text}</div>;
 };
 
 export default Badge;

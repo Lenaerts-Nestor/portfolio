@@ -4,6 +4,7 @@ import { Calendar, X, ChevronRight } from 'lucide-react';
 import { GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
+import { GlobalStyleIndex } from '@/utils/utils';
 
 const Modal = ({
   isOpen,
@@ -40,18 +41,6 @@ const Modal = ({
   );
 };
 
-const GlobalStyle = () => (
-  <style jsx global>{`
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  `}</style>
-);
-
 const BlogPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedWeek, setSelectedWeek] = useState(1);
@@ -63,7 +52,7 @@ const BlogPage = () => {
   }) as Array<{ date: string; content: string }>;
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyleIndex />
       <Head>
         <title>{`WPL Portfolio - ${t('navigation.blog')}`}</title>
         <meta name='description' content={t('blog.description')} />

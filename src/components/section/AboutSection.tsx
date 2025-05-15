@@ -1,24 +1,17 @@
-import React from "react";
-import { LucideIcon } from "lucide-react";
-import SectionHeader from "./SectionHeader";
+import React, { FC } from 'react';
+import SectionHeader from './SectionHeader';
+import { AboutSectionProps } from '@/interfaces/interface';
 
-interface AboutSectionProps {
-    icon: LucideIcon;
-    title: string;
-    children: React.ReactNode;
-    className?: string;
-}
-
-const AboutSection: React.FC<AboutSectionProps> = ({
-    icon,
-    title,
-    children,
-    className = ""
+const AboutSection: FC<AboutSectionProps> = ({
+  icon,
+  title,
+  children,
+  className = '',
 }) => (
-    <section className={`mb-12 ${className}`}>
-        <SectionHeader icon={icon} title={title} />
-        {children}
-    </section>
+  <section className={`mb-12 ${className}`}>
+    <SectionHeader icon={icon} title={title} />
+    {children}
+  </section>
 );
 
 export default AboutSection;
